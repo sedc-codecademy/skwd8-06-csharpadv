@@ -50,8 +50,8 @@ namespace RockPaperScissors
 
         private static void ShowGame(Game game)
         {
-            var playerMove = GetPlayerMove();
             var computerMove = GetComputerMove();
+            var playerMove = GetPlayerMove();
 
             Console.WriteLine($"Player   chose {playerMove}");
             Console.WriteLine($"Computer chose {computerMove}");
