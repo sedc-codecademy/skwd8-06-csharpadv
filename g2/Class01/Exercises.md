@@ -13,7 +13,7 @@
   * Yes - the app runs again
   * No - the app closes
 ## 3. Create a console application that plays rock - paper - scissors 🔹
-* There should be a menu with three options:
+#### There should be a menu with three options:
   1. Play
         * The user picks rock paper or scissors option
         * The application picks rock paper scissors on random
