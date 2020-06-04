@@ -21,26 +21,26 @@ A school is requesting a quizz app to be developed so that the students can log 
 ## Data 🔹
 1) Q: What is the capital of Tasmania?
     * a: Dodoma
-    * b: Hobart
+    * b: Hobart *
     * c: Launceston
     * d: Wellington
 2) Q: What is the tallest building in the Republic of the Congo?
     * a: Kinshasa Democratic Republic of the Congo Temple
     * b: Palais de la Nation
     * c: Kongo Trade Centre
-    * d: Nabemba Tower
+    * d: Nabemba Tower *
 3) Q: Which of these is not one of Pluto's moons?
     * a: Styx
     * b: Hydra
-    * c: Nix
+    * c: Nix *
     * d: Lugia
 4) Q: What is the smallest lake in the world?
     * a: Onega Lake
-    * b: Benxi Lake
+    * b: Benxi Lake *
     * c: Kivu Lake
     * d: Wakatipu Lake
 5) Q: What country has the largest population of alpacas?
     * a: Chad
-    * b: Peru
+    * b: Peru *
     * c: Australia
     * d: Niger
