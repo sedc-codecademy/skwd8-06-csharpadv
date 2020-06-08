@@ -32,6 +32,7 @@ namespace SEDC.Adv._01.AbstractClasses.Entities
 		{
 			// This is a place holder for an implementaton that does not yet exist
 			// We remove it and add our own implementaiton in its place
+			// Always replaced with actual code ( at the mment or later in the development cycle )
 			// throw new NotImplementedException();
 			return $"{FullName} ({Age}) - {YearsExperience} years of experience!";
 		}
