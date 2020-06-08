@@ -6,8 +6,8 @@ namespace QuizUserManagement
 {
     public class Student: User
     {
-        public bool FinishedQuiz { get; set; }
-        public int? Score { get; set; }
+        public bool FinishedQuiz { get; internal set; }
+        public int? Score { get; internal set; }
 
         internal Student()
         {

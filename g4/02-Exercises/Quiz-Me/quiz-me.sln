@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30128.74
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuizMe", "QuizMe.csproj", "{1C144F55-B0BD-4A66-8C62-6A570EB43DB5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuizMe", "QuizMe.csproj", "{1C144F55-B0BD-4A66-8C62-6A570EB43DB5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuizUserManagement", "..\QuizUserManagement\QuizUserManagement.csproj", "{327752E5-88BC-4CD0-B0DC-53CC65342EFA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuizUserManagement", "..\QuizUserManagement\QuizUserManagement.csproj", "{327752E5-88BC-4CD0-B0DC-53CC65342EFA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuizQuestions", "..\QuizQuestions\QuizQuestions.csproj", "{07FDE019-599B-40D2-8833-27AB315A6B86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuizApp", "..\QuizApp\QuizApp.csproj", "{B2BC0833-6576-4911-BB7E-C468280D5468}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{327752E5-88BC-4CD0-B0DC-53CC65342EFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{327752E5-88BC-4CD0-B0DC-53CC65342EFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{327752E5-88BC-4CD0-B0DC-53CC65342EFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07FDE019-599B-40D2-8833-27AB315A6B86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07FDE019-599B-40D2-8833-27AB315A6B86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07FDE019-599B-40D2-8833-27AB315A6B86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07FDE019-599B-40D2-8833-27AB315A6B86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2BC0833-6576-4911-BB7E-C468280D5468}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2BC0833-6576-4911-BB7E-C468280D5468}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2BC0833-6576-4911-BB7E-C468280D5468}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2BC0833-6576-4911-BB7E-C468280D5468}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
