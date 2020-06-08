@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SEDC.Adv._01.AbstractClasses.Entities.Interfaces
+namespace SEDC.Adv._01.AbstractClasses.Entities
 {
 	// You can create an interface from the VS item menu
 	// Or you can create a class and change the class keyword to interface

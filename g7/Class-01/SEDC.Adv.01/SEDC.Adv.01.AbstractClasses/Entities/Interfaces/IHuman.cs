@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SEDC.Adv._01.AbstractClasses.Entities.Interfaces
+namespace SEDC.Adv._01.AbstractClasses.Entities
 {
 	// Intefaces look very much like a class but with the keyword inteface
 	// A naming convention for writing Intreface names is to put I before the name of the interface
