@@ -6,6 +6,7 @@ namespace SEDC.Adv._01.AbstractClasses.Entities
 {
 	// VS helps with generating all the methods that you need from an interface
 	// You can always write those methods manually as well. It has the same effect
+	// BASE CLASS - Called like this because multiple classes from our logic will inherit from it
 	public abstract class Human : IHuman
 	{
 		public string FullName { get; set; }
