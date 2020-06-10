@@ -27,14 +27,15 @@ namespace SEDC.Adv._02
             };
             Users = new List<User>()
             {
-                new User(12, "Bob22", "Bob St. 44"),
-                new User(13, "JillCoolCat", "Wayne St. 109a")
+                new User(12, "Bob22", "Bob St. 44"), // index 0
+                new User(13, "JillCoolCat", "Wayne St. 109a") // index 1
             };
-            Users[0].Orders.Add(Orders[0]);
-            Users[0].Orders.Add(Orders[1]);
-            Users[0].Orders.Add(Orders[2]);
-            Users[1].Orders.Add(Orders[3]);
-            Users[1].Orders.Add(Orders[4]);
+            // Users[0] -> First person in the list, the index
+            Users[0].Orders.Add(Orders[0]); // Give the first order to bob
+            Users[0].Orders.Add(Orders[1]); // Give the second order to bob
+            Users[0].Orders.Add(Orders[2]); // Give the third order to bob
+            Users[1].Orders.Add(Orders[3]); // Give the fourth order to jill
+            Users[1].Orders.Add(Orders[4]); // Give the fifth order to jill
         }
         public static void ListUsers()
         {

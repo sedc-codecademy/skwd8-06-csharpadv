@@ -31,5 +31,17 @@ namespace SEDC.Adv._02.Entities
                 return char.ToUpper(word[0]) + word.Substring(1);
             }
         }
+        public static int ValidateNumberInput(string input)
+        {
+            int choice = 0;
+            bool isMenuChoiceValid = int.TryParse(input, out choice);
+            if (!isMenuChoiceValid)
+            {
+                Console.WriteLine("Wrong input...");
+                Console.ReadLine();
+                return -1;
+            }
+            return choice;
+        }
     }
 }

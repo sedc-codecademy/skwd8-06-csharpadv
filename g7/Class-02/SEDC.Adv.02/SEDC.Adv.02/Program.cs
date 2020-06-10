@@ -7,6 +7,7 @@ namespace SEDC.Adv._02
 	{
 		static void Main(string[] args)
 		{
+            #region Examples
             // We can't create an instance of a static class
             // This does not mean that an instance does not exist from this class
             // Static class actually has an instance but it is created automatically when the app starts
@@ -15,10 +16,11 @@ namespace SEDC.Adv._02
             // TextHelper txt = new TextHelper(); // This gives an error
             // Static class is the same for EVERYBODY EVERYWHERE
             // Normal class is sepparate for each context ( between {} brackets )
+            Console.WriteLine("NOT THE APP");
             Console.WriteLine("Enter a string");
             string input = Console.ReadLine();
             string capitalLetterInput = TextHelper.CapitalFirstLetter(input);
-            User bob = new User() { Id = 1, Username = "bob22", Password = "securePassword" };
+            User bob = new User(1, "bob22", "Bob Street");
             // You can't call methods on normal classes without an instance, like we can with the static classes
             // User.PrintInfo(); // this gives an error
             // We can now use PrintInfo because we have an instance
@@ -26,6 +28,17 @@ namespace SEDC.Adv._02
             Console.WriteLine($"Your string: {capitalLetterInput}");
             Console.WriteLine($"The capital letter method was used {TextHelper.CapitalLetterUses} times!");
             Console.ReadLine();
-		}
-	}
+            Console.Clear();
+            #endregion
+
+            while (true)
+            {
+                Console.Clear();
+                Console.WriteLine("Welcome to the ordering menu!");
+                Console.WriteLine("Choose a User:");
+                OrdersTempDB.ListUsers();
+                
+            }
+        }
+    }
 }

@@ -11,6 +11,7 @@ namespace SEDC.Adv._02.Entities
         public string Password { get; set; }
         public string Address { get; set; }
         public List<Order> Orders { get; set; }
+
         public User(int id, string username, string address)
         {
             Id = id;
