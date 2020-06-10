@@ -13,7 +13,7 @@ A school is requesting a quiz app to be developed so that the students can log i
   * All students that did the quiz and have a grade show up in green
   * All the students that did not do the quiz show up in red
   * Do a simple grade logic: 
-    * If a student answered all 5 questions correctly grade him as `Exelent`
+    * If a student answered all 5 questions correctly grade him as `Excelent`
     * If a student answered more than 3 questions correctly grade him as `Very Good`
     * If a student answered more than 1 question correctly grade him as `Good`
     * If a student didn't answered a single question correctly grade him as `Bad`
