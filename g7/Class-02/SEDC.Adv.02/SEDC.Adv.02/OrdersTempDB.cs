@@ -47,6 +47,7 @@ namespace SEDC.Adv._02
         public static void InsertOrder(int userId, Order order)
         {
             OrderId++;
+            order.Id = OrderId;
             Orders.Add(order);
             // We get the user by id with linq and then add the order to their order list
             Users.Single(x => userId == x.Id).Orders.Add(order);

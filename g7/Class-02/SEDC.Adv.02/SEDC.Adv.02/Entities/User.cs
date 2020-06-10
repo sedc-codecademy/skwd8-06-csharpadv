@@ -29,7 +29,7 @@ namespace SEDC.Adv._02.Entities
         {
             for (int i = 0; i < Orders.Count; i++)
             {
-                Console.WriteLine($"{i + 1} {Orders[i].Print()}");
+                Console.WriteLine($"{i + 1}) {Orders[i].Print()}");
             }
         }
     }

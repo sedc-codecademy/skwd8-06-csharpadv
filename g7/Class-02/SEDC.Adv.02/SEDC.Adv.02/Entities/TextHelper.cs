@@ -43,5 +43,33 @@ namespace SEDC.Adv._02.Entities
             }
             return choice;
         }
+
+        public static void GenerateStatusMessage(OrderStatus status)
+        {
+            string result = "";
+            switch (status)
+            {
+                case OrderStatus.Processing:
+                    Console.ForegroundColor = ConsoleColor.Blue;
+                    result += "[Processing] The order is being processed.";
+                    break;
+                case OrderStatus.Delivered:
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    result += "[Delivered] The order is successfully delivered.";
+                    break;
+                case OrderStatus.DeliveryInProgress:
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    result += "[In Progress] The delivery is in progress...";
+                    break;
+                case OrderStatus.CouldNotBeDelivered:
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    result += "[Not Delivered] The order was not delivered. There was an issue of some sort.";
+                    break;
+                default:
+                    break;
+            }
+            Console.WriteLine(result);
+            Console.ResetColor();
+        }
     }
 }
