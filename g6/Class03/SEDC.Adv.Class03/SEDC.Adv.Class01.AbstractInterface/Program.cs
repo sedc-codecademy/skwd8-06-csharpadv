@@ -49,7 +49,13 @@ namespace SEDC.Adv.Class01.AbstractInterface
 
             IHuman qa1 = new QAEngineer("Mia Wong ITester", 34, 78932222312,
                 new List<string>() { "Selenium" });
+            
+            int number = 9000;
+            object obj = number;
+            Console.WriteLine(obj);
 
+            int number1 = (int)obj;
+            Console.WriteLine(number1);
             Console.ReadLine();
         }
     }
