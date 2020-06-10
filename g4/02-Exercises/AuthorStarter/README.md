@@ -13,3 +13,11 @@ There's no need to edit anything in the `AuthorRepo.cs`.
 - How many books are collaborations (have more than one author)?
 - Which book has the most authors (and how many)?
 - What author wrote most collaborations?"
+
+# Additional tasks
+
+- In what year were published most books in a specific genre? Which genre?
+- Which author has most books nominated for an award?
+- Which auhtor has most books that won an award?
+- Which author has most books nominated for an award, without winning a single award?
+- Make a histogram of books published per decade per genre. 
