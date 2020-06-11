@@ -42,7 +42,7 @@ namespace Static
                 _currentUser = OrdersTempDB.Users[userChoice - 1];
                 //TextHelper.GenerateStatusMesage(_currentUser.Orders[2].Status);
                 #endregion
-                //THIS ONE IS NEW. TAKE A LOOK AND CONTANCT UP FOR ANYTHING
+                //THIS ONE IS NEW. TAKE A LOOK AND CONTACT US FOR ANYTHING
                 #region Orders Menu
                 Console.Clear();
                 Console.WriteLine("Orders menu");
