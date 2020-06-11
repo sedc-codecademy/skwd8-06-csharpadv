@@ -6,13 +6,20 @@ using System.Text;
 
 namespace Static
 {
-    public static class OrdersTempDB
+	// This static class is serving as a temporary database
+	// While the app is running, the static members of this class will keep their data
+	// It can also be accessed from anywhere
+	public static class OrdersTempDB
     {
-        public static int orderId = 5;
-        public static List<User> Users;
+		// This is an ID tracking property so that we generate the Id of orders automatically
+		public static int orderId = 5;
+		// These are the lists that will serve as tables in a database ( Store items in them )
+		public static List<User> Users;
         public static List<Order> Orders;
-
-        static OrdersTempDB()
+		// This is a static constructor
+		// It will only execute once, the first time this class is instanciated, when the app is started
+		// Static constructor does not have access modifier
+		static OrdersTempDB()
         {
 			Orders = new List<Order>()
 			{
@@ -42,6 +49,7 @@ namespace Static
         }
 		public static void InsertOrder(int userId, Order order)
         {
+			// When an order is added, we increment the ID and set it to the new order
 			order.Id = ++orderId;
 			Orders.Add(order);
 			Users.Single(x => x.Id == userId).Orders.Add(order);
