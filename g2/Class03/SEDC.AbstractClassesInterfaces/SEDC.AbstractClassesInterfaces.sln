@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEDC.AbstractClassesInterfaces", "SEDC.AbstractClassesInterfaces\SEDC.AbstractClassesInterfaces.csproj", "{598107E6-A989-4EEC-916E-B2ED716351A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEDC.BoxingUnboxing", "SEDC.BoxingUnboxing\SEDC.BoxingUnboxing.csproj", "{A328649B-7D9B-4593-AF33-8D4B83AF792C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{598107E6-A989-4EEC-916E-B2ED716351A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{598107E6-A989-4EEC-916E-B2ED716351A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{598107E6-A989-4EEC-916E-B2ED716351A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{598107E6-A989-4EEC-916E-B2ED716351A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A328649B-7D9B-4593-AF33-8D4B83AF792C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A328649B-7D9B-4593-AF33-8D4B83AF792C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A328649B-7D9B-4593-AF33-8D4B83AF792C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A328649B-7D9B-4593-AF33-8D4B83AF792C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FB8E1F6B-1773-44B9-A0BE-85399D407AB3}
+	EndGlobalSection
+EndGlobal
