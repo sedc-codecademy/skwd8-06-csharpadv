@@ -4,7 +4,7 @@ using System.Text;
 
 namespace TreeOfTrees
 {
-    public class Mountain : IClaimable
+    public class Mountain: IClaimable
     {
         public string Name { get; set; }
 

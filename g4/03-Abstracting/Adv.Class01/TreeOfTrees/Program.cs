@@ -42,6 +42,17 @@ namespace TreeOfTrees
 
             foreach (var item in climbables)
             {
+                //Console.WriteLine(item is Tree);
+                //Console.WriteLine(item is Mountain);
+                //Console.WriteLine(item is WoodyMountain);
+                if (item is Mountain mountain)
+                {
+                    Console.WriteLine("Is item mountain?");
+                    Console.WriteLine(item == mountain);
+                    // Console.WriteLine(item.Name);
+                    Console.WriteLine(mountain.Name);
+                }
+
                 item.Climb();
             }
 
