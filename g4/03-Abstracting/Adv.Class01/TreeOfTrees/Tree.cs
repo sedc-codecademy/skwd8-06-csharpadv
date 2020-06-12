@@ -4,11 +4,17 @@ using System.Text;
 
 namespace TreeOfTrees
 {
-    public abstract class Tree
+    public abstract class Tree: IClaimable
     {
         public string Trunk { get; set; }
         public string Root { get; set; }
         public List<string> Branches { get; set; }
+        public double Height { get; set; }
+
+        public void Climb()
+        {
+            Console.WriteLine("Climbing tree");
+        }
 
         public abstract string GetSeeds();
 
@@ -45,5 +51,50 @@ namespace TreeOfTrees
         }
 
     }
+
+    public class PearTree : FriutTree
+    {
+        public PearTree() : base("Pears")
+        {
+
+        }
+
+        public override string GetSeeds()
+        {
+            return FruitName;
+        }
+
+    }
+
+    public class BananaTree : FriutTree
+    {
+        public BananaTree() : base("Bananas")
+        {
+
+        }
+
+        public override string GetSeeds()
+        {
+            return FruitName;
+        }
+
+    }
+
+    public class WalnutTree : FriutTree
+    {
+        public WalnutTree() : base("Walnuts")
+        {
+
+        }
+
+        public override string GetSeeds()
+        {
+            return FruitName;
+        }
+
+    }
+
+
+
 
 }
