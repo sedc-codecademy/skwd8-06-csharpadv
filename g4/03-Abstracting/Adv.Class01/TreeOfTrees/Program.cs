@@ -27,7 +27,8 @@ namespace TreeOfTrees
                 new AppleTree(),
                 new PearTree(),
                 new BananaTree(),
-                new WalnutTree()
+                new WalnutTree(),
+                new EvergreenTree(EvergreenType.Pine)
             };
 
             var fruits = trees.Select(tree => tree.GetSeeds());
