@@ -11,6 +11,7 @@ namespace SEDC.Adv._03Generics
 	{
 		static void Main(string[] args)
 		{
+			#region Generics with primitive types
 			List<string> strings = new List<string>() { "str1", "str2", "str3" };
 			List<int> ints = new List<int>() { 5, 22, -18 };
 			List<bool> bools = new List<bool> { true, false, true };
@@ -51,6 +52,10 @@ namespace SEDC.Adv._03Generics
 			genericHelper3.GetInfo(bools);
 
 			Console.ReadLine();
+			#endregion
+			#region Generics with complex types
+
+			#endregion
 		}
 	}
 }
