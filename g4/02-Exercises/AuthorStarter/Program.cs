@@ -117,23 +117,29 @@ namespace AuthorStarter
                 Console.WriteLine();
             }
 
-            //var booksByDecadeByGenre = 
-
-            //foreach (var genreDecades in booksByGenreByDecade)
-            //{
-            //    Console.WriteLine(genreDecades.Genre);
-            //    foreach (var decadeBooks in genreDecades.Books)
-            //    {
-            //        Console.Write($"\t{decadeBooks.Decade}");
-            //    }
-            //    Console.WriteLine();
-            //    foreach (var decadeBooks in genreDecades.Books)
-            //    {
-            //        Console.Write($"\t{decadeBooks.Published}");
-            //    }
-            //    Console.WriteLine();
-            //}
             Console.WriteLine("--------------------");
+
+            Console.WriteLine("Which author has a highest percentage of nominated books?");
+            Console.WriteLine("  Tiebreakers: more total books");
+            Console.WriteLine("             : more wins");
+
+            var authorBooks = authors.Select(a => new
+            {
+                AuthorID = a.ID,
+                AuthorName = a.Name,
+                TotalBooks = a.Books.Count(),
+                NominatedBooks = a.Books.Count(b => b.Nominations > 0),
+                Wins = a.Wins
+            });
+
+            var highestPercentage = authorBooks
+                .OrderByDescending(ab => ab.NominatedBooks * 100 / ab.TotalBooks)
+                .ThenByDescending(ab => ab.TotalBooks)
+                .ThenByDescending(ab => ab.Wins)
+                .First();
+
+            Console.WriteLine($"Highest percentage is {highestPercentage.NominatedBooks * 100  / highestPercentage.TotalBooks}%");
+            Console.WriteLine($"  for the author {highestPercentage.AuthorName}, ({highestPercentage.AuthorID})");
         }
     }
 }
