@@ -8,47 +8,64 @@ namespace Properties
 {
     public class Person
     {
-        private string firstName;
+        public Person() { }
 
-        public string GetFirstName()
+        public Person(string firstName, string lastName)
         {
-            return firstName;
+            FirstName = firstName;
+            LastName = lastName;
         }
 
-        public void SetFirstName(string value)
+        //public Person(string firstName, int age)
+        //{
+        //    FirstName = firstName;
+        //    Age = age;
+        //}
+
+        //public Person(int age, string lastName)
+        //{
+        //    LastName = lastName;
+        //    Age = age;
+        //}
+
+
+        public Person(string firstName, string lastName, int age)
         {
-            if (string.IsNullOrEmpty(value))
+            FirstName = firstName;
+            LastName = lastName;
+            Age = age;
+        }
+
+        public Person(Person person)
+        {
+            FirstName = person.FirstName;
+            LastName = person.LastName;
+            Age = person.Age;
+        }
+
+
+
+        private string firstName;
+
+        public string FirstName
+        {
+            get
             {
-                throw new ArgumentException("Value cannot be null or empty");
+                return firstName;
             }
-            firstName = value;
+            set
+            {
+                if (string.IsNullOrEmpty(value))
+                {
+                    throw new ArgumentException("Value cannot be null or empty");
+                }
+                firstName = value;
+            }
         }
 
         public string LastName;
 
-        private int age;
-
-        public int GetAge()
-        {
-            return age;
-        }
-
-        public void SetAge(int value)
-        {
-            age = value;
-        }
-
-        public int Age
-        {
-            get 
-            {
-                return age;
-            }
-            set 
-            {
-                age = value;
-            }
-        }
+        public int Age { get; set; }
 
 
     }

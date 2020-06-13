@@ -29,6 +29,31 @@ namespace TreeOfTrees
         }
     }
 
+    public enum EvergreenType
+    {
+        Pine,
+        Juniper
+    }
+    public class EvergreenTree : Tree
+    {
+        public EvergreenType Type { get; private set; }
+        public EvergreenTree(EvergreenType type)
+        {
+            Type = type;
+        }
+
+        public override string GetSeeds()
+        {
+            Console.WriteLine("Making like a evergreen");
+            return Type switch
+            {
+                EvergreenType.Pine => "Pinecone",
+                EvergreenType.Juniper => "Juniper cone",
+                _ => "Some other evergreen stuff"
+            };
+        }
+    }
+
     public abstract class FriutTree : Tree
     {
         public string FruitName { get; private set; }
@@ -47,6 +72,7 @@ namespace TreeOfTrees
 
         public override string GetSeeds()
         {
+            Console.WriteLine("Making like an apple tree");
             return FruitName;
         }
 
@@ -61,6 +87,7 @@ namespace TreeOfTrees
 
         public override string GetSeeds()
         {
+            Console.WriteLine("Making like an pear tree");
             return FruitName;
         }
 
@@ -75,6 +102,7 @@ namespace TreeOfTrees
 
         public override string GetSeeds()
         {
+            Console.WriteLine("Making like an banana tree");
             return FruitName;
         }
 
@@ -89,6 +117,7 @@ namespace TreeOfTrees
 
         public override string GetSeeds()
         {
+            Console.WriteLine("Making like an walnut tree");
             return FruitName;
         }
 
