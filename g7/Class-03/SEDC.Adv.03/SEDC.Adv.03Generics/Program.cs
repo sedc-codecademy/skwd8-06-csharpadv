@@ -1,4 +1,5 @@
-﻿using SEDC.Adv._03Generics.Helpers;
+﻿using SEDC.Adv._03Generics.Entities;
+using SEDC.Adv._03Generics.Helpers;
 using System;
 using System.Collections.Generic;
 
@@ -9,6 +10,11 @@ namespace SEDC.Adv._03Generics
 	// We can create a helper class that can help us go throug lists easier instead of us typing foreach or for every time
 	class Program
 	{
+		// Here we create two instances of the generic class
+		// One accepts Product as T so it will change every T in the intance to Product
+		// The other accepts Order as T so it will change every T in the intance to Order
+		public static GenericDb<Product> ProductDb = new GenericDb<Product>();
+		public static GenericDb<Order> OrderDb = new GenericDb<Order>();
 		static void Main(string[] args)
 		{
 			#region Generics with primitive types
@@ -54,7 +60,34 @@ namespace SEDC.Adv._03Generics
 			Console.ReadLine();
 			#endregion
 			#region Generics with complex types
-
+			// When we call the insert method on OrderDb the items will be stored in a list of orders
+			// When we call the insert method on ProductDb the items will be stored in a list of products
+			Console.Clear();
+			OrderDb.Insert(new Order() { Id = 1, Address = "Bob street 29", Receiver = "Bob" });
+			OrderDb.Insert(new Order() { Id = 2, Address = "Jill street 31", Receiver = "Jill" });
+			OrderDb.Insert(new Order() { Id = 3, Address = "Greg street 11", Receiver = "Greg" });
+			ProductDb.Insert(new Product() { Id = 1, Description = "For gaming", Title = "Mouse" });
+			ProductDb.Insert(new Product() { Id = 2, Description = "Mechanical", Title = "Keyboard" });
+			ProductDb.Insert(new Product() { Id = 3, Description = "64GB", Title = "USB" });
+			Console.WriteLine("-----------------------------");
+			Console.WriteLine("Orders:");
+			OrderDb.PrintAll();
+			Console.WriteLine("Products:");
+			ProductDb.PrintAll();
+			Console.WriteLine("------ Get by id 1 from Orders -----");
+			Console.WriteLine(OrderDb.GetById(1).GetInfo());
+			Console.WriteLine("------ Get by id 1 from Products -----");
+			Console.WriteLine(ProductDb.GetById(1).GetInfo());
+			Console.WriteLine("------ Removing id 1 from Orders -----");
+			OrderDb.DeleteById(1);
+			Console.WriteLine("------ Removing id 1 from Products -----");
+			ProductDb.DeleteById(1);
+			Console.WriteLine("-----------------------------");
+			Console.WriteLine("Orders:");
+			OrderDb.PrintAll();
+			Console.WriteLine("Products:");
+			ProductDb.PrintAll();
+			Console.ReadLine();
 			#endregion
 		}
 	}

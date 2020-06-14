@@ -26,6 +26,19 @@ namespace SEDC.Adv._03Generics.Entities
 		}
 		public void PrintAll()
 		{
+			// 1. We create a new instance of GenericDb<Produt> 
+			// 2. All T in that object are changed to Product
+			// 2.1. Ex: List<Produt> _db;
+			// 2.2. Ex: Product item in _db
+			// 3. The PrintAll() is called on this instance
+			// 4. It goes to the implementation of PrintAll()
+			// 5. When it gets to foreach Product item in _db it starts a loop
+			// 6. In the loop we say item.GetInfo()
+			// 6.1. What we are really doing is item( that is Product ).GetInfo()
+			// 6.2. Since the item is Product, GetInfo() is called from the Product class
+
+			// The same steps apply for Order or for any item that inherits from BaseEntity
+
 			foreach (T item in _db)
 			{
 				// We can now use Id and GetInfo
