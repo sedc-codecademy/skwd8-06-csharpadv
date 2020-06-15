@@ -1,4 +1,4 @@
-# Class 03 - Generics and Extension methods 🥪
+# Class 05 - Generics and Extension methods 🥪
 ## Generics 🔹
 As we know, C# is a strictly typed language and when we are building application, it is important that we use and plan the types of our data. But as you can imagine this can limit us sometimes, since there can be some business logic that requires multiple types to be accepted or to have the same logic for many different types. That is where generics come in to play. Basically, we can have methods or classes that can use a place holder type when they are declared and use different types in different scenarios, depending on the use case scenario. There is a convention in C# for writing these placeholder types and that is with the letter **T**. This can be any letter or word but T is the convention. Classes and methods are marked as generic with the < > brackets, inside which we write the place holder on declaration and the type we want to use on instantiation. 
 ### Generic methods
