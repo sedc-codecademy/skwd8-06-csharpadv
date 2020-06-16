@@ -65,3 +65,85 @@ Console.WriteLine(Order.IsOrderValid(ord));
 // We can't call IsOrderValid on the instance of the class Order
 ord.IsOrderValid(ord); // Will show an error
 ```
+## Polymorphism 🔹
+Polymorphism is one of the base concepts of Object Oriented programming. Since C# is an object oriented language and was built that way, this concept is embedded in it's core. The name Polymorphism can sound a bit complicated, but the idea of polymorphism is not that complicated. Methods in C# need to have different names for us to differentiate them. We can't create methods that share the same name as well. But that is not always the case. With polymorphism we can actually have multiple methods with the same name and the compiler can differentiate them one from the other. This is done in few ways:
+* Compile time polymorphism ( Method overloading ) - This type of polymorphism is decided on compile time and the compiler can basically tell which method is which by looking at their signature. The signature of a method is the order, type and number of parameters that they have. So if those 3 criteria match, the compiler will decide that 2 methods are the same, and it will throw an error. If only one of those criteria is different, then the compiler will differentiate between as many methods with the same name, as long as they all have different signatures. 
+```csharp
+// Static polymorphism ( Method overloading )
+// Both methods have the same name
+// Their signature is different
+public static void PetStatus(Dog pet, string ownerName)
+{
+  Console.WriteLine($"Hey there {ownerName}");
+  if (pet.IsGoodBoi) Console.WriteLine("This dog is a good boi :)");
+  else Console.WriteLine("This dog is not really a good boi :(");
+}
+// Signature is different when the order of the properties do not match
+public static void PetStatus(string ownerName, Dog pet)
+{
+  Console.WriteLine($"Hey there {ownerName}. Happy to see you again!");
+  if (pet.IsGoodBoi) Console.WriteLine("This dog is still a good boi :)");
+  else Console.WriteLine("This dog is still not really a good boi :(");
+}
+// Sugnature is different if the property types do not match
+public static void PetStatus(Cat pet, string ownerName)
+{
+  Console.WriteLine($"Hey there {ownerName}");
+  if (pet.IsLazy) Console.WriteLine("This cat is really lazy :(");
+  else Console.WriteLine("This cat is cool and not lazy at all :)");
+}
+// Sugnature is different if the number of properties do not match
+public static void PetStatus(Cat pet)
+{
+  Console.WriteLine($"Hey, a cat with no owner.");
+  if (pet.IsLazy) Console.WriteLine("This cat is really lazy :(");
+  else Console.WriteLine("This cat is cool and not lazy at all :)");
+}
+```
+```csharp
+// They all work as intended
+PetStatus(sparky, "Bob");
+PetStatus("Bob", sparky);
+PetStatus(meow, "Jill");
+PetStatus(meow);
+```
+* Runtime polymorphism ( Method overriding ) - This type of polymorphism is decided on runtime, and is done with overriding a parent class method. This means that there can be multiple classes that have the same method from a parent class, but they can have different implementation in it. 
+```csharp
+public class Pet
+{
+  public string Name { get; set; }
+  public virtual void Eat()
+  {
+    Console.WriteLine("Nom nom nom");
+  }
+}
+public class Dog : Pet
+{
+  public bool IsGoodBoi { get; set; }
+  public override void Eat()
+  {
+    Console.WriteLine("Nom nom noming on dog food!");
+  }
+}
+public class Cat : Pet
+{
+  public bool IsLazy { get; set; }
+  public override void Eat()
+  {
+    Console.WriteLine("Nom nom noming on cat food!");
+  }
+}
+```
+```csharp
+Dog sparky = new Dog() { Name = "Sparky", IsGoodBoi = true };
+Cat meow = new Cat() { Name = "Meow", IsLazy = false };
+
+// They work as intended
+sparky.Eat();
+meow.Eat();
+```
+## Extra Materials 📘
+* [Microsoft - Static class and members](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/static-classes-and-static-class-members)
+* [Microsoft - Polymorphism](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/polymorphism)
+* [Static keyword in C#](https://medium.com/hackernoon/c-static-vs-instance-classes-and-methods-50fe8987b231)
+* [Understanding polymorphism in C#](https://www.c-sharpcorner.com/UploadFile/ff2f08/understanding-polymorphism-in-C-Sharp)
