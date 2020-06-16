@@ -4,7 +4,10 @@ using System.Text;
 
 namespace Generics
 {
-    public class Author { }
+    public class Author : IBasicEntity
+    {
+        public int ID { get; set; }
+    }
 
     public class AuthorManager
     {

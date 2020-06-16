@@ -31,7 +31,7 @@ namespace Generics
             }
         }
 
-        public static void Print<T>(List<T> items)
+        public static void Print<T>(IEnumerable<T> items)
         {
             foreach (T item in items)
             {

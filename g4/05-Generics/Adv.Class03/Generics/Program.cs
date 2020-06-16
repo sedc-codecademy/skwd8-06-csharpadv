@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.InteropServices.ComTypes;
 
 namespace Generics
 {
@@ -69,6 +70,21 @@ namespace Generics
             };
 
             Console.WriteLine(studentNames.PrintStudentItems());
+
+            Console.WriteLine("------------------");
+
+
+            var authorManager = new EntityManager<Author>();
+
+            var bookManager = new EntityManager<Book>();
+
+            bookManager.SaveEntity(new Book { ID = 1 });
+            bookManager.SaveEntity(new Book { ID = 5 });
+            bookManager.SaveEntity(new Book { ID = 17 });
+
+            Printer.Print(bookManager.GetAllEntities());
+
+
         }
 
     }

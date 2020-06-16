@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics", "Generics\Generi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringBuilderDemo", "StringBuilderDemo\StringBuilderDemo.csproj", "{B223B92E-2C9D-4676-B425-1040DC350E45}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionMethodsDemo", "ExtensionMethodsDemo\ExtensionMethodsDemo.csproj", "{398A575E-D83C-47D2-9387-1AA3E77147BA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{B223B92E-2C9D-4676-B425-1040DC350E45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B223B92E-2C9D-4676-B425-1040DC350E45}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B223B92E-2C9D-4676-B425-1040DC350E45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{398A575E-D83C-47D2-9387-1AA3E77147BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{398A575E-D83C-47D2-9387-1AA3E77147BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{398A575E-D83C-47D2-9387-1AA3E77147BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{398A575E-D83C-47D2-9387-1AA3E77147BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

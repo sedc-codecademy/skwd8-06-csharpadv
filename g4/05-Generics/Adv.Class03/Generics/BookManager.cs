@@ -5,7 +5,15 @@ using System.Text;
 namespace Generics
 {
 
-    public class Book { }
+    public class Book : IBasicEntity
+    {
+        public int ID { get; set; }
+
+        public override string ToString()
+        {
+            return $"Book #{ID}";
+        }
+    }
 
     public class BookManager
     {
