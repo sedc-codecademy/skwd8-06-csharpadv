@@ -26,8 +26,11 @@ namespace SEDC.Adv._05.Domain
             new Subject(97,"Networks Basic", 8, 12, Academy.Networks ),
             new Subject(98, "Networks Advanced", 16, 10, Academy.Networks )
         };
+
+        // Static constructor, it is called when the appliction starts at some point
         static SEDC()
         {
+            // Go to the students list and get the first one. Then open the Subjects property and fill it with a list of subjects
             Students[0].Subjects = new List<Subject>() { Subjects[0], Subjects[2], Subjects[3], Subjects[4] };
             Students[1].Subjects = new List<Subject>() { Subjects[3], Subjects[4], Subjects[5], Subjects[1] };
             Students[2].Subjects = new List<Subject>() { Subjects[5], Subjects[6] };

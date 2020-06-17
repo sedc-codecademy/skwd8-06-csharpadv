@@ -7,6 +7,7 @@ namespace SEDC.Adv._05.Domain
 {
 	public static class ListHelper
 	{
+		// Works with stirngs, bools, ints etc.
 		public static void PrintSimple<T>(this List<T> list)
 		{
 			Console.WriteLine("Printing...");
@@ -17,6 +18,7 @@ namespace SEDC.Adv._05.Domain
 			}
 			Console.WriteLine("----------------------------");
 		}
+		// Works with subjects and students
 		public static void PrintEntities<T>(this List<T> list) where T : BaseEntity
 		{
 			Console.WriteLine($"Printing {list[0].GetType().Name}s...");

@@ -6,7 +6,10 @@ namespace SEDC.Adv._05.LINQ
 	{
 		static void Main(string[] args)
 		{
-			Console.WriteLine("Hello World!");
+			// LINQ
+
+			// WHERE
+			// IEnumerable<OriginalType> ( OriginalType -> The stored type of the original collection )
 		}
 	}
 }
