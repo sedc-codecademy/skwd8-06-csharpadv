@@ -1,9 +1,8 @@
-﻿using SEDC.Adv._05.Domain.Entities;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace SEDC.Adv._05.Domain
+namespace SEDC.Adv05.Domain
 {
 	public static class ListHelper
 	{

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SEDC.Adv._05.Domain.Entities
+namespace SEDC.Adv05.Domain
 {
 	public abstract class BaseEntity
 	{

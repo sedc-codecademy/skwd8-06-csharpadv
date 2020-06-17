@@ -1,9 +1,9 @@
-﻿using SEDC.Adv._05.Domain.Entities;
+﻿using SEDC.Adv05.Domain;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace SEDC.Adv._05.Domain
+namespace SEDC.Adv05
 {
     public static class SEDC
     {

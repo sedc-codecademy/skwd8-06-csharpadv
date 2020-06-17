@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Text;
 
-namespace SEDC.Adv._05.Domain.Entities
+namespace SEDC.Adv05.Domain
 {
 	public class Student : BaseEntity
 	{
