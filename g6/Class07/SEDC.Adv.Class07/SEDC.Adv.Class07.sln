@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEDC.Adv.Class07.Domain", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEDC.Adv.Class07.Anonymous", "SEDC.Adv.Class07.Anonymous\SEDC.Adv.Class07.Anonymous.csproj", "{A5AB01A9-68BD-4C2E-ACB3-E5812F471195}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEDC.Adv.Class07.AdvLinq", "SEDC.Adv.Class07.AdvLinq\SEDC.Adv.Class07.AdvLinq.csproj", "{535F3B2F-B7FC-4643-8447-82F989D62A7C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A5AB01A9-68BD-4C2E-ACB3-E5812F471195}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5AB01A9-68BD-4C2E-ACB3-E5812F471195}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5AB01A9-68BD-4C2E-ACB3-E5812F471195}.Release|Any CPU.Build.0 = Release|Any CPU
+		{535F3B2F-B7FC-4643-8447-82F989D62A7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{535F3B2F-B7FC-4643-8447-82F989D62A7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{535F3B2F-B7FC-4643-8447-82F989D62A7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{535F3B2F-B7FC-4643-8447-82F989D62A7C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

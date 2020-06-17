@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace SEDC.Adv.Class07.Domain
 {
-    public static class SEDC
+    public static class Database
     {
         public static List<Student> Students = new List<Student>()
         {
@@ -13,8 +13,8 @@ namespace SEDC.Adv.Class07.Domain
             new Student(29, "Anne", "Willson", 31, true),
             new Student(30, "Liana", "Wurtz", 25, false),
             new Student(41, "Bill", "Zu", 38, false),
-            new Student(42, "Trjan", "Stevkovski", 22, true),
-            new Student(43, "Toshe", "Todorovski", 22, true),
+            new Student(42, "Trajan", "Stevkovski", 22, true),
+            new Student(43, "Tosho", "Todorovski", 22, true),
             new Student(44, "StudentName", "StudentLastName", 31, true)
         };
         public static List<Subject> Subjects = new List<Subject>()
@@ -27,7 +27,7 @@ namespace SEDC.Adv.Class07.Domain
             new Subject(97,"Networks Basic", 8, 12, Academy.Networks ),
             new Subject(98, "Networks Advanced", 16, 10, Academy.Networks )
         };
-        static SEDC()
+        static Database()
         {
             Students[0].Subjects = new List<Subject>() { Subjects[0], Subjects[2], Subjects[3], Subjects[4] };
             Students[1].Subjects = new List<Subject>() { Subjects[3], Subjects[4], Subjects[5], Subjects[1] };
