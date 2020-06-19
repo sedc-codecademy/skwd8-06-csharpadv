@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SEDC.Adv._05.Anonymous
+namespace SEDC.Adv05.Anonymous
 {
 	class Program
 	{
