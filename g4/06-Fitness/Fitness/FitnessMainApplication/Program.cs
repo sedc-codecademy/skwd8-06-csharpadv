@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Fitness.Service;
+
+using System;
 
 namespace FitnessMainApplication
 {
@@ -6,7 +8,12 @@ namespace FitnessMainApplication
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            #region init
+            IUsersRepository users = new MemoryUsersRepository();
+            #endregion
+
+            // lots of code
+            // users.
         }
     }
 }
