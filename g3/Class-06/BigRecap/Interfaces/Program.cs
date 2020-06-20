@@ -3,6 +3,7 @@ using Domain.Interfaces;
 using Services;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Interfaces
 {
@@ -18,7 +19,7 @@ namespace Interfaces
             Steak steakSoDiploma = new Steak { Taste = "Salty", ProteinsAmount = 40 };
             Egg egg1 = new Egg { Taste = "Salty", ProteinsAmount = 30 };
 
-            //List<Apple> apples = new List<Apple> { apple1, apple2, apple3 };
+            //List<Apple> apples = new List<Apple> { apple1, apple2, apple3, new JapanApple { JapanProperty = 2 } };
             //List<Orange> oranges = new List<Orange> { orange1, orange2 };
             //List<Egg> eggs = new List<Egg> { egg1 };
             //List<Steak> steaks = new List<Steak> { steakSoDiploma };
@@ -28,13 +29,13 @@ namespace Interfaces
 
             List<IFood> foods = new List<IFood> { apple1, apple2, apple3, orange1, orange2, steakSoDiploma, egg1 };
 
-
+            foods.Select(x => x.Taste);
 
             GenericDb<Apple> appleDb = new GenericDb<Apple>();
             GenericDb<Orange> orangeDb = new GenericDb<Orange>();
             GenericDb<Steak> steakDb = new GenericDb<Steak>();
             GenericDb<Egg> eggDb = new GenericDb<Egg>();
-            GenericDb<string> stringDb = new GenericDb<string>();
+            //GenericDb<string> stringDb = new GenericDb<string>();
 
             //appleDb appleDb1 = new appleDb()
 
@@ -56,7 +57,8 @@ namespace Interfaces
 
             Console.WriteLine("Choose 1. Juces 2. Proteins 3. All Food");
             string answer = Console.ReadLine();
-            if (answer == "1")
+
+            if (int.Parse(answer) == 1)
             {
                 //foreach (var apple in apples)
                 //{
@@ -73,7 +75,7 @@ namespace Interfaces
                     Console.WriteLine();
                 }
             }
-            else if (answer == "2")
+            else if (StrToInt(answer) == 2)
             {
                 //foreach (var steak in steaks)
                 //{
@@ -90,7 +92,7 @@ namespace Interfaces
                     Console.WriteLine();
                 }
             }
-            else if (answer == "3")
+            else if (answer.ToInt() == 3)
             {
                 //foreach (var jucable in jucables)
                 //{
@@ -113,6 +115,18 @@ namespace Interfaces
             }
 
             Console.ReadKey();
+        }
+
+        private static int StrToInt(string str)
+        {
+            int result;
+
+            if(int.TryParse(str, out result))
+            {
+                return result;
+            }
+
+            return 0;
         }
     }
 }
