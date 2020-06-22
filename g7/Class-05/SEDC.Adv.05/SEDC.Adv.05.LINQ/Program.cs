@@ -197,6 +197,30 @@ namespace SEDC.Adv05.LINQ
 			// 4. We convert that IEnumerable<Subject> to List<Subject> with the ToList() method - 184 line
 			// 5. As developers we are happy because we can work with a list of subjects. It is easy, one for loop. We already have a method that does that
 			// 6. Our head doesn't hurt as much
+
+			// EXAMPLE of list of lists of lists
+			List<List<List<int>>> manyLists = new List<List<List<int>>>()
+			{
+				new List<List<int>>()
+				{
+					new List<int>(){ 2, 3, 4, 5 }
+				},
+				new List<List<int>>()
+				{
+					new List<int>(){ 7, 88, 77, 988 }
+				},
+				new List<List<int>>()
+				{
+					new List<int>(){ 10, 20, 30, 50 }
+				}
+			};
+
+			// Select many goes only one level
+			List<List<int>> manyListResultListInts = manyLists.SelectMany(x => x).ToList();
+			// We use Select many twice to go 2 levels 
+			List<int> manyListResultInts = manyLists.SelectMany(x => x).SelectMany(x => x).ToList();
+
+
 			Console.ReadLine();
 		}
 	}
