@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Net;
 using System.Reflection.Metadata.Ecma335;
+using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading;
 
@@ -200,6 +201,68 @@ namespace Authors
             var bookStartsWithF = getTitleLambdaForCharacter('F');
             
             bookPrinter(allBooks.Where(bookStartsWithF));
+
+            var authorsWithoutBooks = authors.Select(a => new
+            {
+                a.ID,
+                a.Name
+            });
+
+            var booksWithAuthorId = authors.SelectMany(a => a.Books.Select(b => new
+            {
+                b.ID,
+                b.Title,
+                AuthorID = a.ID
+            }));
+
+            var authorBooks = from a in authorsWithoutBooks
+                              join b in booksWithAuthorId on a.ID equals b.AuthorID
+                              select new
+                              {
+                                  a.Name,
+                                  b.Title
+                              };
+
+            // unclear syntax
+            //var authorBooks = authorsWithoutBooks.Join(booksWithAuthorId, a => a.ID, b => b.AuthorID, (a, b) => new
+            //{
+            //    a.Name,
+            //    b.Title
+            //});
+
+            foreach (var ab in authorBooks)
+            {
+                Console.WriteLine($"{ab.Name} wrote {ab.Title}");
+            }
+
+            Console.WriteLine(authorBooks.Count());
+            line();
+
+            // var booksCount = authors.Sum(a => a.Books.Count());
+
+            int accumulator = 0;
+            foreach (var author in authors)
+            {
+                accumulator = accumulator + author.Books.Count();
+            }
+            Console.WriteLine(accumulator);
+
+            int booksCount = authors.Aggregate(0, (acc, author) => acc + author.Books.Count());
+
+            Console.WriteLine(booksCount);
+
+
+            // select-many via aggregate
+            var aggregateBooks = authors.Aggregate(new List<Book>(), (acc, author) => acc.Concat(author.Books).ToList());
+            Console.WriteLine(aggregateBooks.Count);
+
+            // where via aggregate
+            // authors.Where(a => a.Name.StartsWith('A'));
+            var authorNamesWithA = authors.Aggregate(new List<Author>(), (acc, author) => author.Name.StartsWith('A') ? acc.Append(author).ToList() : acc );
+
+            authorPrinter(authorNamesWithA);
+
+            // implement Select, Any, All, Distinct, SingleOrDefault with Aggregate
         }
 
         private static Func<Author, bool> GetNameLambdaForCharacter(char c)
@@ -236,5 +299,7 @@ namespace Authors
             };
             return result;
         }
+
+        private static Func<char, Func<T, bool>> GetStartsWithLambdaGenerator2<T>(Func<T, string> selector) => c => item => selector(item).StartsWith(c);
     }
 }
