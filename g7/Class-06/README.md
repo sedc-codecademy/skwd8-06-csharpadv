@@ -1,4 +1,4 @@
-# Class 05 - Delegates and Events 🥧
+# Class 06 - Delegates and Events 🥧
 ## Delegates 🔹
 Values in C# always have a certain type. Just as values can be represented by a type, so can methods. Delegates are types that represent references to methods. If the method and the delegate share the same signature ( Return and parameter types ) then the delegate can be instantiated with a method that meets the requirements. This means that we can use Delegates as types for methods in a code block, but also as parameter to a method, creating a higher order method. In a delegate, a method can be passed as an argument and the result stored as well as a lambda expression. These methods can then be passed to any other place of the type of the delegate, even if they have different implementation. 
 #### Delegates in Action
