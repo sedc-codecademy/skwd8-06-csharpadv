@@ -116,6 +116,17 @@ namespace Authors
             var dauthors = authors.Where(GetNameLambdaForCharacter('D'));
             authorPrinter(dauthors);
 
+            // F - Authors
+
+            // ADVANCED, CAUSES BRAIN HURT
+            Func<char, Func<Author, bool>> nameStartsWith = c => author => author.Name.StartsWith(c);
+
+            var firstAuthor = authors.First();
+            var isFirstAuthorWithAnF = nameStartsWith('F')(firstAuthor);
+            var isFirstAuthorWithAnD = GetNameLambdaForCharacter('D')(firstAuthor);
+
+            var fauthors = authors.Where(nameStartsWith('F'));
+            authorPrinter(fauthors);
         }
 
         private static Func<Author, bool> GetNameLambdaForCharacter(char c)
