@@ -198,7 +198,8 @@ namespace SEDC.Adv05.LINQ
 			// 5. As developers we are happy because we can work with a list of subjects. It is easy, one for loop. We already have a method that does that
 			// 6. Our head doesn't hurt as much
 
-			// EXAMPLE of list of lists of lists
+			// !!!!ATTENTION!!!!! -> BONUS EXAMPLE ( NOT USED OFTEN IN REAL LIFE )
+			// EXAMPLE of list of lists of lists ( LISTSEPTION )
 			List<List<List<int>>> manyLists = new List<List<List<int>>>()
 			{
 				new List<List<int>>()
@@ -220,6 +221,59 @@ namespace SEDC.Adv05.LINQ
 			// We use Select many twice to go 2 levels 
 			List<int> manyListResultInts = manyLists.SelectMany(x => x).SelectMany(x => x).ToList();
 
+			// Indexing
+			// Taking the second subject of the list of subjects that all the part time studets have
+			Subject partTimeSubject = SEDC.Students
+				.Where(x => x.IsPartTime)
+				.SelectMany(x => x.Subjects).ToList()[1];
+
+			// DISTINCT
+			// It looks at a colletion and it takes only the unique values from it
+			// It returns the type of the original collection but with only unique values
+			Console.WriteLine("--------DISTINCT---------");
+			List<int> nums = new List<int>() { 2, 3, 4, 5, 6, 2, 3, 4, 5, 6, 6, 6, 6, 5, 2 };
+			List<Subject> distinctSubjects = partTimeSubjectsSelectMany.Distinct().ToList();
+			List<int> distinctInts = nums.Distinct().ToList();
+			distinctSubjects.PrintEntities();
+			distinctInts.PrintSimple();
+
+			// ANY 
+			// It tests all the items in a collection and if ANY ONE OF THEM returns true for an expression then it returns true
+			// If it doesn't find ANY that mathches the criteria it returns false
+			Console.WriteLine("---------ANY-------------");
+			bool isBob = SEDC.Students.Any(x => x.FirstName == "Bob"); // return true
+			bool isJoe = SEDC.Students.Any(x => x.FirstName == "Joe"); // return false
+			Console.WriteLine(isBob);
+			Console.WriteLine(isJoe);
+
+			// ALL
+			// It tests all the items in a collection and if ALL OF THEM return true for an expression then it returns true
+			// If at least one of them returns false for the expression then the whole thing is false
+			Console.WriteLine("----------ALL-------------");
+			bool areThereShortNames = SEDC.Students
+				.All(x => x.FirstName.Length >= 3);
+			bool areAllFourCharacterNames = SEDC.Students
+				.All(x => x.FirstName.Length == 4);
+			Console.WriteLine(areThereShortNames);
+			Console.WriteLine(areAllFourCharacterNames);
+
+			// EXCEPT
+			// It returns all the items except those that match some criteria
+			// Except accepts a collection of the same type and it filters those items from the original collection
+			Console.WriteLine("-------------EXCEPT----------------");
+			List<Student> exceptPartTime = SEDC.Students
+				.Except(SEDC.Students.Where(x => x.IsPartTime)).ToList();
+			exceptPartTime.PrintEntities();
+			// ORDERBY / ORDERBYDESCENDING
+			// get a colletion order it and return the same type of collection but ordered by some parameter
+			// OrderBy orders by ascending and OrderByDescending does the same thing but in a descending order
+			Console.WriteLine("------------ORDER------------");
+			List<Student> orderedByNameAsc = SEDC.Students
+				.OrderBy(x => x.FirstName).ToList();
+			List<Student> orderedByIdDesc = SEDC.Students
+				.OrderByDescending(x => x.Id).ToList();
+			orderedByNameAsc.PrintEntities();
+			orderedByIdDesc.PrintEntities();
 
 			Console.ReadLine();
 		}
