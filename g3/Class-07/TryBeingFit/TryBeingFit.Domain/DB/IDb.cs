@@ -5,7 +5,7 @@ using TryBeingFit.Domain.Core.Entities;
 
 namespace TryBeingFit.Domain.DB
 {
-     public interface IDb<T> where T:BaseEntity
+     public interface IDb<T> where T : BaseEntity
     {
         List<T> GetAll();
         T GetById(int id);
