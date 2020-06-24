@@ -8,7 +8,7 @@ namespace SEDC.Adv06.MarketSubscription
 	{
 		Food,
 		Cosmetics,
-		Eletronics,
+		Electronics,
 		Other
 	}
 }

@@ -19,9 +19,40 @@ namespace SEDC.Adv06.MarketSubscription
 	// The subscribers are the Users from the User class
 	class Program
 	{
-		static void Main(string[] args)
+        #region Markets and Users
+        public static Market SuperMart = new Market()
+        {
+            Name = "SuperMart",
+            CurrentPromotion = ProductType.Food
+        };
+        public static Market BestMart = new Market()
+        {
+            Name = "BestMart",
+            CurrentPromotion = ProductType.Electronics
+        };
+        public static User Bob = new User()
+        {
+            Name = "Bob Bobsky",
+            Age = 21,
+            FavoriteType = ProductType.Food
+        };
+        public static User Jill = new User()
+        {
+            Name = "Jill Wayne",
+            Age = 28,
+            FavoriteType = ProductType.Cosmetics
+        };
+        public static User Greg = new User()
+        {
+            Name = "Greg Gregsky",
+            Age = 48,
+            FavoriteType = ProductType.Electronics
+        };
+        #endregion
+
+        static void Main(string[] args)
 		{
-			Console.WriteLine("Hello World!");
+			
 		}
 	}
 }
