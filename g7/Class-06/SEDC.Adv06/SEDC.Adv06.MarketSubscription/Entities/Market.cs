@@ -108,6 +108,7 @@ namespace SEDC.Adv06.MarketSubscription
 		// This is the method that it is called to subscribe a user and it's method for reading promotions ( To get promotions from this point in time forward )
 		public void SubscribeForPromotions(PromotionSender subscriber, string email)
 		{
+			Console.WriteLine("A person subscribed!");
 			// This is how we register a method to the event
 			// In business logic this is where the person wants to subsribe and they sbuscribe to the market for promotions
 			PromotionUserbase += subscriber;
@@ -117,6 +118,7 @@ namespace SEDC.Adv06.MarketSubscription
 		// This is the method that it is called to unsubscribe a user and it's method for reading promotions ( To no longer get promotions )
 		public void UnsubscribeForPromotions(PromotionSender subscriber, string reason)
 		{
+			Console.WriteLine("A person unsubscribed!");
 			PromotionUserbase -= subscriber;
 			SuggestionBox.Add(reason);
 		}
