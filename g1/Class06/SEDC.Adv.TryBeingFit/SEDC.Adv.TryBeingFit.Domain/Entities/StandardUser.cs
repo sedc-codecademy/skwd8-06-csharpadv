@@ -17,7 +17,7 @@ namespace SEDC.Adv.TryBeingFit.Domain.Entities
 
         public override string PrintInfo()
         {
-            throw new NotImplementedException();
+            return $"{FirstName} {LastName} - standard user!";
         }
     }
 }

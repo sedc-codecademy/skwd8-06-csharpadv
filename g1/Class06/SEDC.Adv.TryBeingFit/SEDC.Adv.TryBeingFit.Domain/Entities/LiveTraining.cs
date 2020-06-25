@@ -13,12 +13,16 @@ namespace SEDC.Adv.TryBeingFit.Domain.Entities
 
         public int HoursToNextSession()
         {
-            throw new NotImplementedException();
+            if (NextSession < DateTime.Now)
+            {
+                return -1;
+            }
+            return (NextSession - DateTime.Now).Hours;
         }
 
         public override string PrintInfo()
         {
-            throw new NotImplementedException();
+            return $"[{Difficulty}] {Title} - {Description} - LiveTraining";
         }
     }
 }
