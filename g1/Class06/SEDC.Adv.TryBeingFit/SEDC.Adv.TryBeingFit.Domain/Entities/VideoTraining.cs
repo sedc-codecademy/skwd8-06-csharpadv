@@ -13,12 +13,17 @@ namespace SEDC.Adv.TryBeingFit.Domain.Entities
 
         public string CheckRating()
         {
-            throw new NotImplementedException();
+            var result = "";
+            for (int i = 0; i < Rating; i++)
+            {
+                result += "*";
+            }
+            return result;
         }
 
         public override string PrintInfo()
         {
-            throw new NotImplementedException();
+            return $"[{Difficulty}] {Title} - {Description} - Video Training";
         }
     }
 }
