@@ -7,7 +7,7 @@ namespace Delegates
         static void Main(string[] args)
         {
             Shop west = new Shop();
-            west.InformCustomers();
+            west.InformCustomers.Invoke();
 
             Func<int, string> funcs;
 
