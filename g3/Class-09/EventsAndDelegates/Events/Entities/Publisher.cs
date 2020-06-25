@@ -15,6 +15,7 @@ namespace Events.Entities
             Thread.Sleep(3000);
             WhenDataIsProccesed(message);
         }
+        // It notifies all subscribers for the message that is processed from the ProcessData method
         protected void WhenDataIsProccesed(string message)
         {
             if (DataProccessingHandler != null)

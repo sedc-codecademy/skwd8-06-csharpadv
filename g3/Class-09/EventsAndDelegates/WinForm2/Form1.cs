@@ -10,15 +10,21 @@ using System.Windows.Forms;
 
 namespace WinForm2
 {
+    // This class represents our form
     public partial class Form1 : Form
     {
+        // This is a normal property counter
         public int Counter { get; set; }
+        // This is the constructor for this class form where we set the counter to 0
+        // And we Initialize the Component - Code that generates the UI and it's properties for us to see
         public Form1()
         {
             Counter = 0;
             InitializeComponent();
         }
-
+        // A method that changes the label under the button and increments the counter
+        // This method also removes it self as a subscriber to the Click event and adds a different method
+        // This method is connected to the click event in the InitializeComponent() method
         private void WhenButtonClicked(object sender, EventArgs e)
         {
             Counter += 1;
@@ -31,6 +37,10 @@ namespace WinForm2
             }
 
         }
+        // This method has the smae signature as the previous one
+        // That is why we can replace the previous method with this one on the click event
+        // This method changes the counter by 2 instead of by 1
+        // When it gets to 30 it stops counting and disables the button
         private void WhenButtonClickedBy2(object sender, EventArgs e)
         {
             Counter += 2;
@@ -45,7 +55,7 @@ namespace WinForm2
         {
 
         }
-
+        //just another method to see the work of events
         private void btnClickMe_MouseHover(object sender, EventArgs e)
         {
             lblResult.Text = "I just hovered over the button";
