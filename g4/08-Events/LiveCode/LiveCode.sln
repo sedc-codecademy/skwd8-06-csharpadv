@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvenMoreLinq", "EvenMoreLinq\EvenMoreLinq.csproj", "{50480219-8ABC-471A-92FC-FE4263A35BFB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegates", "Delegates\Delegates.csproj", "{B0C010C5-85AC-4C08-84CB-1EF5FE818115}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{50480219-8ABC-471A-92FC-FE4263A35BFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50480219-8ABC-471A-92FC-FE4263A35BFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50480219-8ABC-471A-92FC-FE4263A35BFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0C010C5-85AC-4C08-84CB-1EF5FE818115}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0C010C5-85AC-4C08-84CB-1EF5FE818115}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0C010C5-85AC-4C08-84CB-1EF5FE818115}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0C010C5-85AC-4C08-84CB-1EF5FE818115}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Reflection;
 
 namespace EvenMoreLinq
 {
@@ -43,8 +44,9 @@ namespace EvenMoreLinq
             }
 
             totalBooks
-                /*.Select(...) */
-                .Print(/*....*/);
+                //.Select((b, index)=> (Index:index+1, Title:b.Title, ID: b.ID ))
+                .Select((b, index) => (Index: index+1, b.Title, b.ID))
+                .Print(item => $"{item.Index}. {item.Title} ({item.ID})");
 
             //  Name (ID)
             //  Name (ID)
