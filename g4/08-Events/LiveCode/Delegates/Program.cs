@@ -5,6 +5,8 @@ using System.Reflection.PortableExecutable;
 
 namespace Delegates
 {
+    public delegate int SingleIntOperation(int x);
+
     public delegate int IntOperation(int x, int y);
 
     public delegate IEnumerable<int> TakeTwoListsAndOperate(IEnumerable<int> first, IEnumerable<int> second);
@@ -49,8 +51,8 @@ namespace Delegates
             IPerson p = new Person("Wekoslav", "Stefanovski");
             PrintFullName(p);
 
-            Func<int, int> square = x => x * x;
-            Func<int, int> cube = x => x * x * x;
+            SingleIntOperation square = x => x * x;
+            SingleIntOperation cube = x => x * x * x;
 
             IntOperation add = (x, y) => x + y;
             IntOperation sub = (x, y) => x - y;

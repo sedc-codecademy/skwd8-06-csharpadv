@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvenMoreLinq", "EvenMoreLin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegates", "Delegates\Delegates.csproj", "{B0C010C5-85AC-4C08-84CB-1EF5FE818115}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWinForms", "HelloWinForms\HelloWinForms.csproj", "{30FF64D4-BBBC-4506-86D7-77983D776B7C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B0C010C5-85AC-4C08-84CB-1EF5FE818115}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0C010C5-85AC-4C08-84CB-1EF5FE818115}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0C010C5-85AC-4C08-84CB-1EF5FE818115}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30FF64D4-BBBC-4506-86D7-77983D776B7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30FF64D4-BBBC-4506-86D7-77983D776B7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30FF64D4-BBBC-4506-86D7-77983D776B7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30FF64D4-BBBC-4506-86D7-77983D776B7C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
