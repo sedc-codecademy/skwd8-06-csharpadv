@@ -23,7 +23,7 @@ namespace SEDC.Adv.TryBeingFit.Domain.Db
 
 		public T GetById(int id)
 		{
-			return db.FirstOrDefault(x => x.Id == id);
+			return db.SingleOrDefault(x => x.Id == id);
 		}
 
 		public int Insert(T entity)
