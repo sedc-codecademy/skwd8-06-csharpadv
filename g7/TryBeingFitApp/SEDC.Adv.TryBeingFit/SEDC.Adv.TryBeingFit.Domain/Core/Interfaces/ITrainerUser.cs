@@ -6,6 +6,6 @@ namespace SEDC.Adv.TryBeingFit.Domain
 {
     public interface ITrainerUser
     {
-        bool ChangeSchedule(LiveTraining liveTraining);
+        bool ChangeSchedule(LiveTraining liveTraining, int days);
     }
 }
