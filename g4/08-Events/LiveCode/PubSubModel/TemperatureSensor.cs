@@ -4,11 +4,10 @@ using System.Text;
 
 namespace PubSubModel
 {
-    public delegate void SensorChange(int sensorValue);
-
     public class TemperatureSensor
     {
-        public SensorChange TemperatureChanged;
+        //public List<SensorChange> TemperatureChanged = new List<SensorChange>();
+        public event SensorChange TemperatureChanged;
 
         private int temperature;
         public int Temperature {
@@ -16,7 +15,15 @@ namespace PubSubModel
             set
             {
                 temperature = value;
-                TemperatureChanged(temperature);
+                if (TemperatureChanged != null)
+                {
+                    TemperatureChanged(temperature);
+                }
+                //foreach (var listener in TemperatureChanged)
+                //{
+                //    listener(temperature);
+                //}
+
             }
         }
 

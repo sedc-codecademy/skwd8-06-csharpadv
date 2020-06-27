@@ -19,13 +19,23 @@ namespace PubSubModel
             //Console.WriteLine(calculator.FeelsLike);
 
             Display enDisplay = new Display();
+            SevenSegmentDisplay ssDisplay = new SevenSegmentDisplay();
 
             TemperatureSensor ts = new TemperatureSensor();
-            ts.TemperatureChanged = enDisplay.ShowTemperature;
+            //ts.TemperatureChanged.Add(enDisplay.ShowTemperature);
+            //ts.TemperatureChanged.Add(ssDisplay.DisplayTemp);
+            ts.TemperatureChanged += enDisplay.ShowTemperature;
+            ts.TemperatureChanged += ssDisplay.DisplayTemp;
 
             // this happens tomorrow
             ts.Temperature = 25;
+
+            //ts.TemperatureChanged.Remove(ssDisplay.DisplayTemp);
+            ts.TemperatureChanged -= ssDisplay.DisplayTemp;
+
             ts.Temperature = 30;
+
+
         }
 
         static void ShowTemperature(int temp)
