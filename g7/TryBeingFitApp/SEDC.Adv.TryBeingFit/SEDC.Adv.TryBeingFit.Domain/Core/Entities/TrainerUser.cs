@@ -11,14 +11,16 @@ namespace SEDC.Adv.TryBeingFit.Domain
         {
             Role = UserRole.Trainer;
         }
-        public bool ChangeSchedule(LiveTraining liveTraining)
+        public bool ChangeSchedule(LiveTraining liveTraining, int days)
         {
-            throw new NotImplementedException();
+            if (days <= 0) return false;
+            liveTraining.NextSession = liveTraining.NextSession.AddDays(days);
+            return true;
         }
 
         public override string Info()
         {
-            throw new NotImplementedException();
+            return $"{FirstName} {LastName} - {YearsExperience} experience!";
         }
     }
 }

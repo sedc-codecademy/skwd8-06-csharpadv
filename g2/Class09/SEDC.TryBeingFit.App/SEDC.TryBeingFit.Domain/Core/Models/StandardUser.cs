@@ -1,8 +1,9 @@
-﻿using System;
+﻿using SEDC.TryBeingFit.Domain.Core.Enums;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace SEDC.Adv.TryBeingFit.Domain
+namespace SEDC.TryBeingFit.Domain.Core.Models
 {
     public class StandardUser : User
     {
@@ -12,9 +13,10 @@ namespace SEDC.Adv.TryBeingFit.Domain
         {
             Role = UserRole.Standard;
         }
-        public override string Info()
+
+        public override string Print()
         {
-            return $"{FirstName} {LastName}";
+            throw new NotImplementedException();
         }
     }
 }

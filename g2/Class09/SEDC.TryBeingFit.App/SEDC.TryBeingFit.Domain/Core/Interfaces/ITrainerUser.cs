@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SEDC.Adv.TryBeingFit.Domain
+namespace SEDC.TryBeingFit.Domain.Core.Interfaces
 {
     public interface ITrainerUser
     {
-        bool ChangeSchedule(LiveTraining liveTraining, int days);
+        bool ChangeSchedule(ILiveTraining liveTraining);
     }
 }

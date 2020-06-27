@@ -11,12 +11,12 @@ namespace SEDC.Adv.TryBeingFit.Domain
 
         public int HoursToNextSession()
         {
-            throw new NotImplementedException();
+            return (NextSession - DateTime.Now).Hours;
         }
 
         public override string Info()
         {
-            throw new NotImplementedException();
+            return $"[{Difficulty}]{Title} - {Description} with {Trainer.Print()}";
         }
     }
 }
