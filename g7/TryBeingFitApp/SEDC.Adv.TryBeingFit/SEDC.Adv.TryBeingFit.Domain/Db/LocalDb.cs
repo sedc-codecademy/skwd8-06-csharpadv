@@ -5,6 +5,19 @@ using System.Text;
 
 namespace SEDC.Adv.TryBeingFit.Domain
 {
+    // Why we need this class
+    // We need to work with data and for that reason we need to store the data somewhere
+    // We need to somehow manipulate with that data. Get stuff, save stuff, remove stuff, change stuff
+    // In order to do that we create class or multiple classes depending on the scenario that hold methods
+    // Those methods will do the manipulation of the data from the database
+    // We are organizing all the methods for manipulating the database in one place ( or few places if needed )
+    // 
+    // In our case:
+    // We currently keep the data in a List because we don't know any better alternative yet
+    // To access the List is like accessing database
+    // We add all the methods of manipulating the list here as if it was a database
+
+
     // When inheriting from a generic intefrace we can do one of 2 things:
     // 1. Make the class that inherits from the generic interface generic as well
     // 2. Add a type to replace the T in the interface so that the class will work with that type only

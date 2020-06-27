@@ -7,7 +7,7 @@ namespace SEDC.Adv.TryBeingFit.Domain
     public class LiveTraining : Training, ILiveTraining
     {
         public DateTime NextSession { get; set; }
-        public string Trainer { get; set; }
+        public TrainerUser Trainer { get; set; }
 
         public int HoursToNextSession()
         {
@@ -16,7 +16,7 @@ namespace SEDC.Adv.TryBeingFit.Domain
 
         public override string Info()
         {
-            return $"[{Difficulty}]{Title} - {Description} with {Trainer.Print()}";
+            return $"[{Difficulty}]{Title} - {Description} with {Trainer.Info()}";
         }
     }
 }
