@@ -58,4 +58,43 @@ Time is one of the most valuable resources on the planet. When we learn, work, s
 	* After the user hits enter and fills in the extra info a message shows with the time they spent in minutes
 	* When the user hits enter after the message with the time, they are redirected to the main menu again
 	*	Each activity is tracked sepparately for each user
-
+## Homework part 2
+*	**User Statistics** ( HOMEWORK PART 2 )
+	*	Should be available in the main menu
+	*	When the user chooses this they should get a new menu with options
+		*	Reading
+			*	Total time ( in hours )
+			*	**BONUS:** Average of all activity records ( in minutes )
+			*	Total number of pages
+			*	Favorite Type - The type which has most registered records of activity
+		*	Exercising
+			*	Total time ( in hours )
+			*	**BONUS:** Average of all activity records ( in minutes )
+			*	Favorite Type - The type which has most registered records of activity
+		*	Working
+			*	Total time ( in hours )
+			*	**BONUS:** Average of all activity records ( in minutes )
+			*  Home VS Office working ( in hours )
+		*	Hobbies
+			*	Total time ( in hours )
+			*	**BONUS:** List of all recorded names of hobies ( Do not show duplicates )
+		*	Global
+			*	Total time of all activities ( in hours )
+			*	What is the user favorite activity
+* **Account Management** ( HOMEWORK PART 2 )
+	* Should be available in the main menu
+	* Should have the option to:
+		* Change password
+		* Change FirstName
+		* Change LastName
+	* **BONUS:** Deactivate account
+		* **BONUS:** Should flag the user as deactivated and the user should not be able to log in
+		* **BONUS:** When the user logs in but their account is deactivated there should be a question on whether the user wants to activate their account again 
+* **Back Option** ( HOMEWORK PART 2 )
+	* This option should be available on the Statistics, Account Management and Activites menu
+	* The option should redirect the user back to the main menu
+* **Menu Validations** ( HOMEWORK PART 2 )
+	* All menus should be validated by not allowing the user to enter anything but numbers
+	* The numbers should be validated so the user can only enter numbers which are given as options
+	* Error messages should appear when the user enters incorrect info in red text
+	* When the user successfully register, log in or change their info, they should receive a green success message
