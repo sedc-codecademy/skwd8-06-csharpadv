@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEDC.Adv.Class09.Delegates", "SEDC.Adv.Class09.Delegates\SEDC.Adv.Class09.Delegates.csproj", "{20D8EB3B-C965-44D6-9804-B16F785A2A99}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SEDC.Adv.Class09.Delegates", "SEDC.Adv.Class09.Delegates\SEDC.Adv.Class09.Delegates.csproj", "{20D8EB3B-C965-44D6-9804-B16F785A2A99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEDC.Adv.Class09.Events", "SEDC.Adv.Class09.Events\SEDC.Adv.Class09.Events.csproj", "{CD71702C-1DD7-4C5F-85E4-3905E02554A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SEDC.Adv.Class09.Events", "SEDC.Adv.Class09.Events\SEDC.Adv.Class09.Events.csproj", "{CD71702C-1DD7-4C5F-85E4-3905E02554A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEDC.Adv.Class09.Example", "SEDC.Adv.Class09.Example\SEDC.Adv.Class09.Example.csproj", "{ED9AC985-F999-4AEB-9E39-131AEC8A8614}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{CD71702C-1DD7-4C5F-85E4-3905E02554A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD71702C-1DD7-4C5F-85E4-3905E02554A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD71702C-1DD7-4C5F-85E4-3905E02554A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED9AC985-F999-4AEB-9E39-131AEC8A8614}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED9AC985-F999-4AEB-9E39-131AEC8A8614}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED9AC985-F999-4AEB-9E39-131AEC8A8614}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED9AC985-F999-4AEB-9E39-131AEC8A8614}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
