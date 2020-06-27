@@ -7,16 +7,16 @@ namespace SEDC.Adv.TryBeingFit.Domain
     public class LiveTraining : Training, ILiveTraining
     {
         public DateTime NextSession { get; set; }
-        public string Trainer { get; set; }
+        public TrainerUser Trainer { get; set; }
 
         public int HoursToNextSession()
         {
-            throw new NotImplementedException();
+            return (NextSession - DateTime.Now).Hours;
         }
 
         public override string Info()
         {
-            throw new NotImplementedException();
+            return $"[{Difficulty}]{Title} - {Description} with {Trainer.Info()}";
         }
     }
 }

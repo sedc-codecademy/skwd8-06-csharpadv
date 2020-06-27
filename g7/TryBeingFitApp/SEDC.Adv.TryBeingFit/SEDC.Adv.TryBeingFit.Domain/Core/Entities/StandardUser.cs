@@ -14,7 +14,7 @@ namespace SEDC.Adv.TryBeingFit.Domain
         }
         public override string Info()
         {
-            throw new NotImplementedException();
+            return $"{FirstName} {LastName}";
         }
     }
 }
