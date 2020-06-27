@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EvenMoreLinq", "EvenMoreLinq\EvenMoreLinq.csproj", "{50480219-8ABC-471A-92FC-FE4263A35BFB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EvenMoreLinq", "EvenMoreLinq\EvenMoreLinq.csproj", "{50480219-8ABC-471A-92FC-FE4263A35BFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegates", "Delegates\Delegates.csproj", "{B0C010C5-85AC-4C08-84CB-1EF5FE818115}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Delegates", "Delegates\Delegates.csproj", "{B0C010C5-85AC-4C08-84CB-1EF5FE818115}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWinForms", "HelloWinForms\HelloWinForms.csproj", "{30FF64D4-BBBC-4506-86D7-77983D776B7C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWinForms", "HelloWinForms\HelloWinForms.csproj", "{30FF64D4-BBBC-4506-86D7-77983D776B7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PubSubModel", "PubSubModel\PubSubModel.csproj", "{E0F05296-4EB7-4691-882C-14453C2B154B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{30FF64D4-BBBC-4506-86D7-77983D776B7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30FF64D4-BBBC-4506-86D7-77983D776B7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30FF64D4-BBBC-4506-86D7-77983D776B7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0F05296-4EB7-4691-882C-14453C2B154B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0F05296-4EB7-4691-882C-14453C2B154B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0F05296-4EB7-4691-882C-14453C2B154B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0F05296-4EB7-4691-882C-14453C2B154B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
