@@ -22,40 +22,45 @@ namespace SEDC.Adv.TryBeingFit.Services.Services
 			if (ValidationHelper.ValidateString(firstName) == null 
 				|| ValidationHelper.ValidateString(lastName) == null)
 			{
-				//MessageHelper.Color("[Error] strings were not valid. Please try again!", ConsoleColor.Red);
-				return;
+                MessageHelper.Color("[Error] strings were not valid. Please try again!", ConsoleColor.Red);
+                return;
 			}
 			user.FirstName = firstName;
 			user.LastName = lastName;
 			_db.Update(user);
-			//MessageHelper.Color("Data successfuly changed!", ConsoleColor.Green);
-		}
+            MessageHelper.Color("Data successfuly changed!", ConsoleColor.Green);
+        }
 
 		public void ChangePassword(int userId, string oldPassword, string newPassword)
 		{
 			T user = _db.GetById(userId);
 			if (user.Password != oldPassword)
 			{
-				//MessageHelper.Color("[Error] Old password did not match", ConsoleColor.Red);
-				return;
+                MessageHelper.Color("[Error] Old password did not match", ConsoleColor.Red);
+                return;
 			}
 			if (ValidationHelper.ValidatePassword(newPassword) == null)
 			{
-				//MessageHelper.Color("[Error] New password is not valid", ConsoleColor.Red);
-				return;
+                MessageHelper.Color("[Error] New password is not valid", ConsoleColor.Red);
+                return;
 			}
 			user.Password = newPassword;
 			_db.Update(user);
-			//MessageHelper.Color("Password successfuly changed!", ConsoleColor.Green);
-		}
+            MessageHelper.Color("Password successfuly changed!", ConsoleColor.Green);
+        }
 
-		public T LogIn(string username, string password)
+        public T GetById(int id)
+        {
+            return _db.GetById(id);
+        }
+
+        public T LogIn(string username, string password)
 		{
 			T user = _db.GetAll().FirstOrDefault(x => x.Username == username && x.Password == password);
 			if (user == null)
 			{
-				//MessageHelper.Color("[Error] Username or password did not match!", ConsoleColor.Red);
-				return null;
+                MessageHelper.Color("[Error] Username or password did not match!", ConsoleColor.Red);
+                return null;
 			}
 			return user;
 		}
@@ -67,8 +72,8 @@ namespace SEDC.Adv.TryBeingFit.Services.Services
 				|| ValidationHelper.ValidateUsername(user.Username) == null
 				|| ValidationHelper.ValidatePassword(user.Password) == null)
 			{
-				//MessageHelper.Color("[Error] Invalid info!", ConsoleColor.Red);
-				Console.ReadLine();
+                MessageHelper.Color("[Error] Invalid info!", ConsoleColor.Red);
+                Console.ReadLine();
 				return null;
 			}
 			int id = _db.Insert(user);

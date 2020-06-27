@@ -9,16 +9,9 @@ namespace SEDC.Adv.TryBeingFit.Domain.Entities
     {
         public string Link { get; set; }
 
-        public int Rating { get; set; }
-
-        public string CheckRating()
-        {
-            throw new NotImplementedException();
-        }
-
         public override string PrintInfo()
         {
-            throw new NotImplementedException();
+            return $"[{Difficulty}] {Title} - {Description}";
         }
     }
 }

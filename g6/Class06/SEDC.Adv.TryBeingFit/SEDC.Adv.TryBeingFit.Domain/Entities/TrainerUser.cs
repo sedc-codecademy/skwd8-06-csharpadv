@@ -15,9 +15,14 @@ namespace SEDC.Adv.TryBeingFit.Domain.Entities
             Role = UserRole.Trainer;
         }
 
-        public bool ChangeSchedule(ILiveTraining liveTraining)
+        public bool ChangeSchedule(LiveTraining liveTraining, int days)
         {
-            throw new NotImplementedException();
+            if (days <= 0)
+            {
+                return false;
+            }
+            liveTraining.NextSession = liveTraining.NextSession.AddDays(days);
+            return true;
         }
 
         public override string PrintInfo()
