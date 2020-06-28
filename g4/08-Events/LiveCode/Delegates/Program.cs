@@ -46,6 +46,14 @@ namespace Delegates
             Console.WriteLine(operation(10, 2));
         }
 
+
+        private static IntOperation savedOp;
+        static void SaveOperation(IntOperation operation)
+        {
+            savedOp = operation;
+        }
+
+
         static void Main(string[] args)
         {
             IPerson p = new Person("Wekoslav", "Stefanovski");
@@ -66,6 +74,12 @@ namespace Delegates
             ExecOperation(Substraction);
 
             ExecOperation(p.Length);
+
+            SaveOperation(p.Length);
+            
+            p = null;
+
+            Console.WriteLine(savedOp(0, 0));
 
             var p2 = new Person("Ivan", "Acev");
             ExecOperation(p2.Length);

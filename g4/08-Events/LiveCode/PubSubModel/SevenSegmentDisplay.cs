@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace PubSubModel
@@ -8,12 +9,34 @@ namespace PubSubModel
     {
         public void DisplayTemp (int temp)
         {
-            Console.WriteLine("SS Display");
-            var digits = temp.ToString().Split("");
+            var digits = temp.ToString().ToCharArray();
+            // digits.Select(d => ToSSDisplay(d));
+
             foreach (var digit in digits)
             {
-                Console.WriteLine(digit);
+                foreach (var line in ToSSDisplay(digit))
+                {
+                    Console.WriteLine(line);
+                }
+                Console.WriteLine();
             }
+        }
+
+        public static string[] ToSSDisplay(char digit)
+        {
+            return digit switch {
+                '0' => new string[] { "#####", "#   #", "#   #", "#   #", "#####" },
+                '1' => new string[] { "    #", "    #", "    #", "    #", "    #" },
+                '2' => new string[] { "#####", "    #", "#####", "#    ", "#####" },
+                '3' => new string[] { "#####", "    #", "#####", "    #", "#####" },
+                '4' => new string[] { "#   #", "#   #", "#####", "    #", "    #" },
+                '5' => new string[] { "#####", "#    ", "#####", "    #", "#####" },
+                '6' => new string[] { "#####", "#    ", "#####", "#   #", "#####" },
+                '7' => new string[] { "#####", "    #", "    #", "    #", "    #" },
+                '8' => new string[] { "#####", "#   #", "#####", "#   #", "#####" },
+                '9' => new string[] { "#####", "#   #", "#####", "    #", "#####" },
+                _ => new string[] { "     ", "     ", "     ", "     ", "     " },
+            };
         }
     }
 }

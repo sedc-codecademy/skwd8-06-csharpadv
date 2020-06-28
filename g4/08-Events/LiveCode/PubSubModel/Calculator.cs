@@ -9,10 +9,11 @@ namespace PubSubModel
         private int temperature;
         private int windChill;
 
+        public event SensorChange FeelsLikeChanged;
+
         public int Temperature { 
             get => temperature; 
             set {
-                Console.WriteLine("Setting temperature");
                 temperature = value;
                 AffectResult();
             } 
@@ -23,7 +24,6 @@ namespace PubSubModel
             get => windChill;
             set
             {
-                Console.WriteLine("Setting windchill");
                 windChill = value;
                 AffectResult();
             }
@@ -34,12 +34,12 @@ namespace PubSubModel
         public void Add()
         {
             FeelsLike = Temperature + WindChill;
+            FeelsLikeChanged?.Invoke(FeelsLike);
         }
 
         private void AffectResult()
         {
             Add();
-            Console.WriteLine("Here we should say that something changed");
         }
 
     }
