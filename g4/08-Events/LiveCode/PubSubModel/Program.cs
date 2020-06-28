@@ -62,6 +62,7 @@ namespace PubSubModel
 
             ts.Temperature = 20;
             wcs.WindChill = -3;
+
         }
 
         static void ShowTemperature(int temp)

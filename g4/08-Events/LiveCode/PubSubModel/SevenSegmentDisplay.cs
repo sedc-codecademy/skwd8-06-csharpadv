@@ -10,16 +10,14 @@ namespace PubSubModel
         public void DisplayTemp (int temp)
         {
             var digits = temp.ToString().ToCharArray();
-            // digits.Select(d => ToSSDisplay(d));
+            var output = digits.Select(d => ToSSDisplay(d))
+                   .Aggregate(new string[5], (acc, display) => acc.Zip(display, (a, b) => $"{a} {b}").ToArray());
 
-            foreach (var digit in digits)
+            foreach (var line in output)
             {
-                foreach (var line in ToSSDisplay(digit))
-                {
-                    Console.WriteLine(line);
-                }
-                Console.WriteLine();
+                Console.WriteLine(line);
             }
+                Console.WriteLine();
         }
 
         public static string[] ToSSDisplay(char digit)
