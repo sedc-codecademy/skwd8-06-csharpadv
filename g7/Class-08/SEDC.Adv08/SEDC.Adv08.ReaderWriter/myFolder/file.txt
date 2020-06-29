@@ -1,0 +1,3 @@
+Hello SEDC!
+We are writing this from the console app from the StreamWriter!
+Ant this is the last line!
