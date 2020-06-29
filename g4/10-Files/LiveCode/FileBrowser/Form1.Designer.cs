@@ -31,6 +31,7 @@
             this.lbxFiles = new System.Windows.Forms.ListBox();
             this.lblOutput = new System.Windows.Forms.Label();
             this.btnOpenFolder = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbxFiles
@@ -49,7 +50,7 @@
             this.lblOutput.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOutput.Location = new System.Drawing.Point(378, 28);
             this.lblOutput.Name = "lblOutput";
-            this.lblOutput.Size = new System.Drawing.Size(0, 51);
+            this.lblOutput.Size = new System.Drawing.Size(0, 41);
             this.lblOutput.TabIndex = 1;
             // 
             // btnOpenFolder
@@ -63,11 +64,22 @@
             this.btnOpenFolder.UseVisualStyleBackColor = true;
             this.btnOpenFolder.Click += new System.EventHandler(this.btnOpenFolder_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(1132, 528);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1298, 771);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnOpenFolder);
             this.Controls.Add(this.lblOutput);
             this.Controls.Add(this.lbxFiles);
@@ -84,6 +96,7 @@
         private System.Windows.Forms.ListBox lbxFiles;
         private System.Windows.Forms.Label lblOutput;
         private System.Windows.Forms.Button btnOpenFolder;
+        private System.Windows.Forms.Button button1;
     }
 }
 

@@ -66,5 +66,16 @@ namespace FileBrowser
             folder = selectedItem;
             ShowFolderContents();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var filename = @"D:\SWeko\Books\Calibre\Henry Louis Gates Jr_\Stony the Road (4708)\Stony the Road - Henry Louis Gates Jr_.mobi";
+
+            //Console.WriteLine("Begin reading");
+            var contents = File.ReadAllLines(filename);
+            //Console.WriteLine($"Total lines: {contents.Length}");
+            //Console.WriteLine($"Total characters: {contents.Sum(line => line.Length)}");
+            //Console.WriteLine("Finished reading");
+        }
     }
 }
