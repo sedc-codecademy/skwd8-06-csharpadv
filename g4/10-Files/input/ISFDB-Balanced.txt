@@ -1,0 +1,52 @@
+ISFDB Top 100 Books (Balanced List)
+  6  316 Little, Big                              John Crowley 
+ 24  243 Tea with the Black Dragon                R. A. MacAvoy 
+ 27  235 Brittle Innings                          Michael Bishop 
+ 28  234 Ash: A Secret History                    Mary Gentle 
+ 33  225 The Scar                                 China Miéville 
+ 34  223 China Mountain Zhang                     Maureen F. McHugh 
+ 35  223 The Terminal Experiment                  Robert J. Sawyer 
+ 36  219 Stations of the Tide                     Michael Swanwick 
+ 38  215 Seventh Son                              Orson Scott Card 
+ 40  211 On Wings of Song                         Thomas M. Disch 
+ 43  206 Ammonite                                 Nicola Griffith 
+ 45  204 Mother of Storms                         John Barnes 
+ 48  201 Moving Mars                              Greg Bear 
+ 49  201 The Sparrow                              Mary Doria Russell 
+ 50  200 The Postman                              David Brin 
+ 52  200 Titan                                    John Varley 
+ 54  196 In the Country of the Blind              Michael F. Flynn 
+ 56  194 Starplex                                 Robert J. Sawyer 
+ 57  193 All the Weyrs of Pern                    Anne McCaffrey 
+ 58  192 Midnight Robber                          Nalo Hopkinson 
+ 59  192 Brown Girl in the Ring                   Nalo Hopkinson 
+ 60  190 The Little Country                       Charles de Lint 
+ 61  189 The Anubis Gates                         Tim Powers 
+ 63  185 Passage                                  Connie Willis 
+ 64  185 Carrion Comfort                          Dan Simmons 
+ 65  185 The Wounded Land                         Stephen R. Donaldson 
+ 66  185 Blind Voices                             Tom Reamy 
+ 67  184 Harpist in the Wind                      Patricia A. McKillip 
+ 68  184 Mona Lisa Overdrive                      William Gibson 
+ 69  183 Towing Jehovah                           James Morrow 
+ 70  183 Permutation City                         Greg Egan 
+ 74  180 Fairyland                                Paul J. McAuley 
+ 75  179 Only Begotten Daughter                   James Morrow 
+ 76  179 Islands in the Net                       Bruce Sterling 
+ 77  179 The Chronoliths                          Robert Charles Wilson 
+ 80  174 No Enemy But Time                        Michael Bishop 
+ 81  172 The Wild Shore                           Kim Stanley Robinson 
+ 82  171 Waking the Moon                          Elizabeth Hand 
+ 83  170 Bone Dance                               Emma Bull 
+ 84  170 Tehanu: The Last Book of Earthsea        Ursula K. Le Guin 
+ 86  168 Drawing Blood                            Poppy Z. Brite 
+ 87  168 Time Enough for Love                     Robert A. Heinlein 
+ 88  165 Emergence                                David R. Palmer 
+ 89  165 Beggars in Spain                         Nancy Kress 
+ 91  165 Count Zero                               William Gibson 
+ 93  164 Golden Fleece                            Robert J. Sawyer 
+ 95  162 The Cipher                               Kathe Koja 
+ 97  160 Someplace to be Flying                   Charles de Lint 
+ 98  159 The Separation                           Christopher Priest 
+ 99  158 Riddley Walker                           Russell Hoban 
+100  156 The Other Wind                           Ursula K. Le Guin 

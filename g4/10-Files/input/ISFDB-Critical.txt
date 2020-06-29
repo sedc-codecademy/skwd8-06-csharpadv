@@ -1,0 +1,64 @@
+ISFDB Top 100 Books (Critical List)
+ 10  923 Stations of the Tide                     Michael Swanwick 
+ 13  864 Ash: A Secret History                    Mary Gentle 
+ 14  860 Little, Big                              John Crowley 
+ 17  796 China Mountain Zhang                     Maureen F. McHugh 
+ 19  789 Ammonite                                 Nicola Griffith 
+ 20  773 The Safety of Unknown Cities             Lucy Taylor 
+ 21  763 Midnight Robber                          Nalo Hopkinson 
+ 22  760 On Wings of Song                         Thomas M. Disch 
+ 23  751 Brittle Innings                          Michael Bishop 
+ 25  748 Moving Mars                              Greg Bear 
+ 27  739 The Sparrow                              Mary Doria Russell 
+ 29  732 The Postman                              David Brin 
+ 34  722 Tea with the Black Dragon                R. A. MacAvoy 
+ 35  705 A Woman of the Iron People               Eleanor Arnason 
+ 38  680 Drowning Towers                          George Turner 
+ 42  648 Mother of Storms                         John Barnes 
+ 43  648 The Wild Shore                           Kim Stanley Robinson 
+ 45  636 Parable of the Talents                   Octavia E. Butler 
+ 46  635 Brown Girl in the Ring                   Nalo Hopkinson 
+ 47  629 Drawing Blood                            Poppy Z. Brite 
+ 48  628 The Anubis Gates                         Tim Powers 
+ 49  620 In the Country of the Blind              Michael F. Flynn 
+ 50  619 Green Eyes                               Lucius Shepard 
+ 51  616 Only Begotten Daughter                   James Morrow 
+ 52  609 Passage                                  Connie Willis 
+ 53  598 Waking the Moon                          Elizabeth Hand 
+ 54  595 Riddley Walker                           Russell Hoban 
+ 55  593 Fairyland                                Paul J. McAuley 
+ 58  581 The Terminal Experiment                  Robert J. Sawyer 
+ 59  573 The Child Garden                         Geoff Ryman 
+ 60  569 The Wounded Land                         Stephen R. Donaldson 
+ 61  568 Temporary Agency                         Rachel Pollack 
+ 62  568 Titan                                    John Varley 
+ 63  563 Time Enough for Love                     Robert A. Heinlein 
+ 64  558 Ivory: A Legend of Past and Future       Mike Resnick 
+ 65  555 No Enemy But Time                        Michael Bishop 
+ 66  554 Blind Voices                             Tom Reamy 
+ 67  551 Sabriel                                  Garth Nix 
+ 68  550 Permutation City                         Greg Egan 
+ 69  548 Fire in the Mist                         Holly Lisle 
+ 70  547 Islands in the Net                       Bruce Sterling 
+ 71  547 Flow My Tears, the Policeman Said        Philip K. Dick 
+ 72  544 Dawn Song                                Michael Marano 
+ 73  543 Man Plus                                 Frederik Pohl 
+ 75  542 Emergence                                David R. Palmer 
+ 76  541 The Cipher                               Kathe Koja 
+ 77  538 Slow River                               Nicola Griffith 
+ 78  535 Tehanu: The Last Book of Earthsea        Ursula K. Le Guin 
+ 80  531 The Music of Razors                      Cameron Rogers 
+ 81  530 A Midsummer Tempest                      Poul Anderson 
+ 83  529 The One Tree                             Stephen R. Donaldson 
+ 84  527 The Chronoliths                          Robert Charles Wilson 
+ 86  519 The Year of the Quiet Sun                Wilson Tucker 
+ 87  518 Grave Markings                           Michael A. Arnzen 
+ 88  514 Anno Dracula                             Kim Newman 
+ 90  512 Briar Rose                               Jane Yolen 
+ 91  512 The Infernal                             Kim Wilkins 
+ 93  510 Sunglasses After Dark                    Nancy A. Collins 
+ 94  509 Sacrament                                Clive Barker 
+ 95  508 The Star Fox                             Poul Anderson 
+ 97  506 The Scar                                 China Miéville 
+ 98  505 The Power of UN                          Nancy Etchemendy 
+100  502 Lincoln's Dreams                         Connie Willis 
