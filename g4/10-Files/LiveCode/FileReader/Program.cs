@@ -32,7 +32,6 @@ namespace FileReader
                 string[] contents = { "One", "Two", "Three", "Four", "Five" };
                 File.WriteAllLines(filename, contents);
                 Console.WriteLine("Written file");
-                
             }
             
         }
