@@ -44,6 +44,8 @@ namespace Boxing
             BoxingMatch bm = new BoxingMatch(champion, challenger, 500);
             bm.AttachDisplay(new ConsoleDisplay());
             bm.RunGame();
+
+            Console.ReadKey();
         }
     }
 }
