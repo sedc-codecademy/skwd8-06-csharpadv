@@ -1,0 +1,46 @@
+ISFDB Top 100 Books (Popular List)
+  5 1000 Little, Big                              John Crowley 
+ 14  845 The Scar                                 China Miéville 
+ 21  816 Seventh Son                              Orson Scott Card 
+ 24  787 The Terminal Experiment                  Robert J. Sawyer 
+ 27  780 All the Weyrs of Pern                    Anne McCaffrey 
+ 28  772 Golden Fleece                            Robert J. Sawyer 
+ 29  765 The Little Country                       Charles de Lint 
+ 34  720 Mona Lisa Overdrive                      William Gibson 
+ 35  719 Tea with the Black Dragon                R. A. MacAvoy 
+ 38  711 Virtual Light                            William Gibson 
+ 39  710 Starplex                                 Robert J. Sawyer 
+ 40  705 The Sky Road                             Ken MacLeod 
+ 42  691 Brittle Innings                          Michael Bishop 
+ 44  688 Harpist in the Wind                      Patricia A. McKillip 
+ 45  686 Carrion Comfort                          Dan Simmons 
+ 48  675 Our Lady of Darkness                     Fritz Leiber 
+ 51  660 Someplace to be Flying                   Charles de Lint 
+ 53  635 Towing Jehovah                           James Morrow 
+ 54  635 The Years of Rice and Salt               Kim Stanley Robinson 
+ 56  611 Calculating God                          Robert J. Sawyer 
+ 57  611 Titan                                    John Varley 
+ 58  600 Mother of Storms                         John Barnes 
+ 60  596 Far-Seer                                 Robert J. Sawyer 
+ 61  586 The Prestige                             Christopher Priest 
+ 62  585 Mythago Wood                             Robert Holdstock 
+ 63  576 Darwinia                                 Robert Charles Wilson 
+ 64  575 China Mountain Zhang                     Maureen F. McHugh 
+ 67  571 Permutation City                         Greg Egan 
+ 68  566 Requiem                                  Graham Joyce 
+ 74  551 The Chronoliths                          Robert Charles Wilson 
+ 75  550 Ash: A Secret History                    Mary Gentle 
+ 76  550 Bag of Bones                             Stephen King 
+ 77  545 The Dolphins of Pern                     Anne McCaffrey 
+ 78  545 Beggars in Spain                         Nancy Kress 
+ 79  543 In the Country of the Blind              Michael F. Flynn 
+ 81  541 Last Call                                Tim Powers 
+ 83  537 Bone Dance                               Emma Bull 
+ 85  536 Brown Girl in the Ring                   Nalo Hopkinson 
+ 88  533 Blind Voices                             Tom Reamy 
+ 90  531 Excession                                Iain M. Banks 
+ 96  526 Jack Faust                               Michael Swanwick 
+ 98  520 Courtship Rite                           Donald Kingsbury 
+ 99  519 The Ceremonies                           T. E. D. Klein 
+100  519 The Wounded Land                         Stephen R. Donaldson 
+
