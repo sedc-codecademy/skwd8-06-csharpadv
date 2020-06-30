@@ -8,7 +8,7 @@ namespace Delagates
     {
         public string Name { get; set; }
 
-        public InformCustomers Inform { get; set; }
+        public event InformCustomers Inform;
 
         public void AddMethodToDelegate(InformCustomers informCustomers)
         {
