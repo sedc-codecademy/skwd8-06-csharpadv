@@ -1,0 +1,4 @@
+Hello SEDC!
+We are writing text from StreamWriter!
+Hello AGAIN!
+This is written on top of the previous one!
