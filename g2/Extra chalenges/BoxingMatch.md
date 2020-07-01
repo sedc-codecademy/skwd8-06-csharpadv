@@ -80,5 +80,7 @@ It should also display a history of the punches thrown.
 ## Remarks
 
 The `Boxer` class should not have a reference to the `Display` class
+
 The `Display` class should not have a reference to the `Boxer` class
+
 The `BoxMatch` should have references to both classes and should handle the orchestration.
