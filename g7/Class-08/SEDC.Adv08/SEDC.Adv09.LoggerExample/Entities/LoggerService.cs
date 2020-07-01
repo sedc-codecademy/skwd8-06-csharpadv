@@ -29,13 +29,13 @@ namespace SEDC.Adv09.LoggerExample.Entities
 		{
 			// We add _errorLogPath to specify the path where we want to write
 			// We add true to specify that we don't want to overwrite the text that was previously there
-			StreamWriter sr = new StreamWriter(_errorLogPath, true);
-			sr.WriteLine($"[Error] {error}");
-			sr.WriteLine($"Time: {DateTime.Now.ToLocalTime()}");
-			sr.WriteLine($"Message: {message}");
-			sr.WriteLine($"User: {username}");
-			sr.WriteLine($"----------------------------------");
-			sr.Dispose();
+			StreamWriter sw = new StreamWriter(_errorLogPath, true);
+			sw.WriteLine($"[Error] {error}");
+			sw.WriteLine($"Time: {DateTime.Now.ToLocalTime()}");
+			sw.WriteLine($"Message: {message}");
+			sw.WriteLine($"User: {username}");
+			sw.WriteLine($"----------------------------------");
+			sw.Dispose();
 		}
 
 		// Update the count of errors in the errorCount file

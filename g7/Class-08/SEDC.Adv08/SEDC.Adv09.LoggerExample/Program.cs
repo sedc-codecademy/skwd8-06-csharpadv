@@ -6,6 +6,14 @@ using System.Security.Cryptography.X509Certificates;
 
 namespace SEDC.Adv09.LoggerExample
 {
+	// USE CASE:
+	// We need to handle the errors in our application that has a log in screen
+	// We needed to handle people failing to log in separately ( when a person does not succeed to log in )
+	// We needed to handle people entering wrong information about a property separately as well
+	// All the issues, the login, the wrong property as well as any other issue in the app should be logged in a text file
+	// This text file will help the QA or Operations team to figure out what's wrong
+	// We also want to track how much errors did we register globaly at any time
+
 	class Program
 	{
 		static LoggerService _logger = new LoggerService();
