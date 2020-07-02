@@ -26,13 +26,15 @@ namespace PubSubApp
 
         static void StartUI(Platform platform)
         {
+            Logger logger = new Logger("log.txt"); // Instantiate a new Logger service with a file name log.txt to work with
+
             // Initialize Platform service to use "youtube" platform (NOTE: This service can only work with youtube platform)
-            PlatformService platformService = new PlatformService(platform);
+            PlatformService platformService = new PlatformService(platform, logger);
 
             Console.WriteLine("Enter a username");
             string usernameInput = Console.ReadLine();
             // Can add a login validation here, to check for password as well
-
+            logger.Log(usernameInput, "This user logged in"); // Logs a login information in the log.txt file
 
             Channel channel = platformService.GetChannelByUserName(usernameInput);
 
@@ -47,6 +49,7 @@ namespace PubSubApp
                 Video video = platformService.CreateVideo(videoTitleInput, Guid.NewGuid().ToString());
 
                 channel.UploadVideo(video);
+                logger.Log(usernameInput, $"Video {video.Title} is uploaded by {usernameInput}"); // Logs an information about a video upload in the log.txt file, tells which user uploaded the video
             }
             else if (userChoice == "2")
             {
