@@ -8,6 +8,7 @@ namespace Class11.Disposing
         public static string AppPath = @"..\..\..\Text";
         public static string FilePath = AppPath + @"\text.txt";
 
+
         public static void CreateFolder(string path)
         {
             if(!Directory.Exists(path))
