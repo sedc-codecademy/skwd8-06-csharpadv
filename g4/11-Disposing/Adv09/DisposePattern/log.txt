@@ -1,0 +1,15 @@
+[ERROR] dasdasdas is not a valid integer
+[INFO] Received 490 as first value
+[INFO] Received 7 as first value
+[INFO] Divided 490 by 7 and gotten 70
+[INFO] Received 10 as first value
+[INFO] Received 0 as second value
+[INFO] Received 10 as first value
+[INFO] Received 0 as second value
+[ERROR] Attempted to divide by zero. 
+[INFO] Received 2 as first value
+[INFO] Received 1 as second value
+[INFO] Divided 2 by 1 and gotten 2
+[INFO] Received 123456 as first value
+[INFO] Received 55 as second value
+[INFO] Divided 123456 by 55 and gotten 2244

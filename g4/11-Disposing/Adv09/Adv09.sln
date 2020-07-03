@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memories", "Memories\Memori
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResourceHog", "ResourceHog\ResourceHog.csproj", "{564AE661-F1DE-497F-ABEF-3F2C9DF28E6E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisposePattern", "DisposePattern\DisposePattern.csproj", "{859A367F-2E46-4F8B-8D5C-2A2943A4183F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Finalizer", "Finalizer\Finalizer.csproj", "{D514131B-59F0-4984-9903-6FB678F21FC2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{564AE661-F1DE-497F-ABEF-3F2C9DF28E6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{564AE661-F1DE-497F-ABEF-3F2C9DF28E6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{564AE661-F1DE-497F-ABEF-3F2C9DF28E6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{859A367F-2E46-4F8B-8D5C-2A2943A4183F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{859A367F-2E46-4F8B-8D5C-2A2943A4183F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{859A367F-2E46-4F8B-8D5C-2A2943A4183F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{859A367F-2E46-4F8B-8D5C-2A2943A4183F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D514131B-59F0-4984-9903-6FB678F21FC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D514131B-59F0-4984-9903-6FB678F21FC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D514131B-59F0-4984-9903-6FB678F21FC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D514131B-59F0-4984-9903-6FB678F21FC2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
