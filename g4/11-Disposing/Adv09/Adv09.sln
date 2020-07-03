@@ -11,6 +11,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Adv09.OptionalNamedParam", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadingFile", "ReadingFile\ReadingFile.csproj", "{8D6F3703-1A6E-4250-9703-49D8B709C37C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memories", "Memories\Memories.csproj", "{8D0746C2-A802-4517-A683-4781C566C78D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ResourceHog", "ResourceHog\ResourceHog.csproj", "{564AE661-F1DE-497F-ABEF-3F2C9DF28E6E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{8D6F3703-1A6E-4250-9703-49D8B709C37C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D6F3703-1A6E-4250-9703-49D8B709C37C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D6F3703-1A6E-4250-9703-49D8B709C37C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D0746C2-A802-4517-A683-4781C566C78D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D0746C2-A802-4517-A683-4781C566C78D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D0746C2-A802-4517-A683-4781C566C78D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D0746C2-A802-4517-A683-4781C566C78D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{564AE661-F1DE-497F-ABEF-3F2C9DF28E6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{564AE661-F1DE-497F-ABEF-3F2C9DF28E6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{564AE661-F1DE-497F-ABEF-3F2C9DF28E6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{564AE661-F1DE-497F-ABEF-3F2C9DF28E6E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
