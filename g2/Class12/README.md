@@ -76,6 +76,10 @@ public Student DeserializeStudent(string json)
 }
 ```
 
+## NuGet 🔹
+
+Package managers are very useful tool in a developers tool set. It helps with picking the right library, tracking the version, installing and uninstalling the library at any time. We already covered the NPM package manager for JavaScript. C# also has a package manager of its own. That is the NuGet package manager. This package manager is built in the Visual Studio so that we can easily mange our packages directly from our solution and project. All we need to do is right lick on our project and go **Manage NuGet Packages**. There we can see all the installed packages, their versions and we can browse through new packages and install them with one click.
+
 ## Newtonsoft.Json 🔹
 
 One of the most famous library for serialization and deserialization in C# is the Newtonsoft.Json library. We can add it from the NuGet package manager to our project very easily. This library gives us the option to automatically serialize and deserialize stuff without much configuration and settings. We can even configure the properties, their mapping as well as what happens when an object is serialized or deserialized.
