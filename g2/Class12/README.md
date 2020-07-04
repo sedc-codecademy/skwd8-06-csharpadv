@@ -75,3 +75,32 @@ public Student DeserializeStudent(string json)
     return student;
 }
 ```
+
+## Newtonsoft.Json 🔹
+
+One of the most famous library for serialization and deserialization in C# is the Newtonsoft.Json library. We can add it from the NuGet package manager to our project very easily. This library gives us the option to automatically serialize and deserialize stuff without much configuration and settings. We can even configure the properties, their mapping as well as what happens when an object is serialized or deserialized.
+
+#### Serialization
+
+```csharp
+Student bob = new Student()
+{
+    FirstName = "Bob",
+    LastName = "Bobsky",
+    Age = 40,
+    IsPartTime = false
+};
+string bobSerialized = JsonConvert.SerializeObject(bob);
+```
+
+#### Deserialization
+
+```csharp
+Student bobDeserialized = JsonConvert.DeserializeObject<Student>(bobSerialized);
+```
+
+## Extra Materials 📘
+
+- [Microsoft - Serialization](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/serialization)
+- [Newtonsoft.Json Documentation](https://www.newtonsoft.com/json/help/html/Introduction.htm)
+- [Channel9 - Learn Nuget](https://channel9.msdn.com/Series/NuGet-101/?&WT.mc_id=EducationalNuget-c9-niner)
