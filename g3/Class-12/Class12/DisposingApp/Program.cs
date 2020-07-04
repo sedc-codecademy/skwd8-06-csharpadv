@@ -17,14 +17,6 @@ namespace DisposingApp
             fileFolderService.CreateFileCustomAutomatic(_thisPath, "fourth.txt", "just some content for fourth file");
             fileFolderService.CreateFileCustomAutomatic2(_thisPath, "fifth.txt", "just some content for fifth file");
 
-            int num1 = 3;
-            int num2 = num1;
-            num2 = 4;
-
-            var ser1 = new FileFolderService();
-            var ser2 = ser1;
-            ser2 = new CustomWriter();
-
             Console.ReadKey();
         }
     }

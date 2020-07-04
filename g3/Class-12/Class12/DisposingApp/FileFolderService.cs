@@ -17,7 +17,7 @@ namespace DisposingApp
                 FileStream file = File.Create(_fullPath);
                 StreamWriter writer = new StreamWriter(file);
 
-                file.CanRead
+                
                 writer.WriteLine(content);
 
                 //file.Close();
