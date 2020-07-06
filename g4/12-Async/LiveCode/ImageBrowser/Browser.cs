@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Security.AccessControl;
@@ -17,6 +18,7 @@ namespace ImageBrowser
     {
         private IEnumerable<Author> authors;
         private Author selectedAuthor;
+        private Random random = new Random();
 
         public Browser()
         {
@@ -71,7 +73,7 @@ namespace ImageBrowser
             lblStatus.Text = $"Loaded {selectedAuthor.Books.Count()} books for {selectedAuthor.Name}";
         }
 
-        private void LoadBookImage(Book book, int row, int column)
+        private async Task LoadBookImage(Book book, int row, int column)
         {
             lblStatus.Text = $"Loading image for {book.Title}";
             PictureBox picture = new PictureBox
@@ -85,11 +87,12 @@ namespace ImageBrowser
             string imageName = GetImageName(book);
             var request = WebRequest.Create($"http://worldswithoutend.com/covers_md/{imageName}");
 
-            using (var response = request.GetResponse())
+            using (var response = await request.GetResponseAsync())
             {
                 using (var stream = response.GetResponseStream())
                 {
                     picture.Image = Image.FromStream(stream);
+                    await Task.Delay(random.Next(2000));
                     pnlBookImages.Controls.Add(picture);
                 }
             }
