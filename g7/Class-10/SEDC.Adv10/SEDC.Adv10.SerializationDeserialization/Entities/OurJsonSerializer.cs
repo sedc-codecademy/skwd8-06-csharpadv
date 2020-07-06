@@ -28,6 +28,11 @@ namespace SEDC.Adv10.SerializationDeserialization.Entities
 				// Clean the json file
 				// We clean the brackets that we don't need and we clean any special character that we don't need such as \r \n \"
 				// We want to get to the name of the property as well as the value it self only. Nothing else. 
+				// With Substring we take EVERYTING BETWEEN { } BUT NOT THE { AND } THEMSELVES
+				// Example -> {hellosedc} -> { index is 0 -> } index is 10
+				// If we do Substring(0, 10) we would get {hellosedc}
+				// IF we do Substring(1, 9) we would get hellosedc
+				json = json.Trim(); // We remove spaces at the end of the file
 				string content = json.Substring(json.IndexOf("{") + 1, json.IndexOf("}") - 1) // This gets the content between the brackets without the brackets them selves
 				.Replace("\r", "") // Here we remove all \r 
 				.Replace("\n", "") // Here we remove all \n ( Issue example in C# -> "Bob\n" )  ( How it looks in the JSON -> "FirstName" : "Bob" \n )
