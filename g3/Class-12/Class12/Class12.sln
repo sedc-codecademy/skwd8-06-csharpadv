@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29926.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisposingApp", "DisposingApp\DisposingApp.csproj", "{1CE21799-0EA3-4F22-A7A3-BB6BAE33669B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DisposingApp", "DisposingApp\DisposingApp.csproj", "{1CE21799-0EA3-4F22-A7A3-BB6BAE33669B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nullable", "Nullable\Nullable.csproj", "{D1557F51-C19D-4D8F-98F0-3693DF3D5051}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OptionalNamedParams", "OptionalNamedParams\OptionalNamedParams.csproj", "{E740074B-3A39-49FC-BED0-3C1CF98E71EA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{1CE21799-0EA3-4F22-A7A3-BB6BAE33669B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1CE21799-0EA3-4F22-A7A3-BB6BAE33669B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1CE21799-0EA3-4F22-A7A3-BB6BAE33669B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1557F51-C19D-4D8F-98F0-3693DF3D5051}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1557F51-C19D-4D8F-98F0-3693DF3D5051}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1557F51-C19D-4D8F-98F0-3693DF3D5051}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1557F51-C19D-4D8F-98F0-3693DF3D5051}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E740074B-3A39-49FC-BED0-3C1CF98E71EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E740074B-3A39-49FC-BED0-3C1CF98E71EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E740074B-3A39-49FC-BED0-3C1CF98E71EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E740074B-3A39-49FC-BED0-3C1CF98E71EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
