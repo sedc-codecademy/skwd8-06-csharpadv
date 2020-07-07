@@ -21,7 +21,6 @@ namespace Class13.AsyncAwait
             Console.ReadLine();
         }
 
-
         public static void SendMessage(string message)
         {
             Console.WriteLine("Sending message...");
