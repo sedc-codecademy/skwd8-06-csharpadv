@@ -28,7 +28,6 @@ namespace Class13.Threads
             //    Console.WriteLine("This is a new thread 3.");
             //}).Start();
 
-
             //SendMessages();
             SendMessagesWithThreads();
             Console.ReadLine();

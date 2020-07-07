@@ -21,7 +21,6 @@ namespace Class13.Tasks
             t.Wait();
             Console.WriteLine("Completed");
             Console.WriteLine($"The length of the result is {t.Result.Length}");
-           
 
             Console.ReadLine();
         }

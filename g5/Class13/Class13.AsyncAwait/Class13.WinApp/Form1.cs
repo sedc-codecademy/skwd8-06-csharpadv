@@ -22,7 +22,7 @@ namespace Class13.WinApp
         private async void button1_Click(object sender, EventArgs e)
         {
             //DownloadHtmlFromInternet("https://www.stackoverflow.com");
-            // DownloadHtmlFromInternetAsync("https://www.stackoverflow.com");
+            //DownloadHtmlFromInternetAsync("https://www.stackoverflow.com");
 
             var html = await GetHtmlAsync("https://www.stackoverflow.com");
             MessageBox.Show(html.Substring(0, 5));
