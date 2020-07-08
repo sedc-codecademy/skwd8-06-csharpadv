@@ -93,6 +93,7 @@ namespace SEDC.Adv10.FileSystemDatabase
 		// The id number that is next to be used is saved in a file
 		// When we need a new id, we get that number from the file
 		// Then we write the number + 1 to the file back for the next item
+		// This method is for making unique ids 
 		public int GenerateNewId()
 		{
 			int id = 1;
