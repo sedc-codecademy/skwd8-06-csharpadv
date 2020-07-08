@@ -5,4 +5,8 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SEDC.SerializeServices\SEDC.SerializeServices.csproj" />
+  </ItemGroup>
+
 </Project>

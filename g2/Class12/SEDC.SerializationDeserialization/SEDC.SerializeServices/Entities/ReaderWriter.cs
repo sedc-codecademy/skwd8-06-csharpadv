@@ -24,7 +24,7 @@ namespace SEDC.SerializationDeserialization.Entities
 
         public void WriteFile(string path, string data)
         {
-            using (StreamWriter sw = new StreamWriter(path))
+            using (StreamWriter sw = new StreamWriter(path, true))
             {
                 sw.WriteLine(data);
             }
