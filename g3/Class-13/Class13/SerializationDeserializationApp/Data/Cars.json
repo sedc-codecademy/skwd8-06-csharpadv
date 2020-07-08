@@ -1,0 +1,38 @@
+[
+  {
+    "Brand": "Chevrolet",
+    "Model": "Camaro",
+    "Year": 2003,
+    "Color": "red"
+  },
+  {
+    "Brand": "Chevrolet",
+    "Model": "Camaro",
+    "Year": 2003,
+    "Color": "red"
+  },
+  {
+    "Brand": "BMW",
+    "Model": "M3",
+    "Year": 2006,
+    "Color": "blue"
+  },
+  {
+    "Brand": "Zastava",
+    "Model": "Fico",
+    "Year": 1983,
+    "Color": "white"
+  },
+  {
+    "Brand": "Zastava",
+    "Model": "Fico2",
+    "Year": 1983,
+    "Color": "white"
+  },
+  {
+    "Brand": "Zastava",
+    "Model": "Fico3",
+    "Year": 1983,
+    "Color": "white"
+  }
+]
