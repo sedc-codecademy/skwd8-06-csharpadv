@@ -69,6 +69,27 @@ namespace SEDC.Exercise.TryBeingFit.Services.Services
             Console.ReadLine();
 
         }
+        public void ChangePassword(int userId,string oldPassword, string newPassword)
+        {
+            T user = _db.GetById(userId);
+            if(user.Password != oldPassword)
+            {
+                MessageHelper.Color("[Error] Old password did not match", ConsoleColor.Red);
+                Console.ReadLine();
+                return;
+            }
+            if (ValidationHelper.ValidateString(newPassword) == null)
+            {
+                MessageHelper.Color("[Error] New password is not valid!", ConsoleColor.Red);
+                Console.ReadLine();
+                return;
+            }
+            user.Password = newPassword;
+            _db.Update(user);
+            MessageHelper.Color("Password successfuly changed!", ConsoleColor.Green);
+            Console.ReadLine();
+
+        }
 
 
 
