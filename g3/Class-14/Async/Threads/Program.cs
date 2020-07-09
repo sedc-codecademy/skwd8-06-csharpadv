@@ -49,19 +49,22 @@ namespace Threads
 
                 task2Stopwatch.Stop();
                 Console.WriteLine(task2Stopwatch.ElapsedMilliseconds);
-
-                #region stopping stopwatch
-                stopwatch.Stop();
-                Console.WriteLine($"All time: {stopwatch.ElapsedMilliseconds}");
-                #endregion
             });
             task2.Start();
 
 
-            //#region stopping stopwatch
-            //stopwatch.Stop();
-            //Console.WriteLine(stopwatch.ElapsedMilliseconds);
-            //#endregion
+            #region stopping stopwatch
+            while (true)
+            {
+                if (!task1.IsAlive && !task2.IsAlive)
+                {
+                    stopwatch.Stop();
+                    Console.WriteLine($"All time {stopwatch.ElapsedMilliseconds}");
+
+                    break;
+                }
+            }
+            #endregion
 
             Console.ReadKey();
         }
