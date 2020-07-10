@@ -61,14 +61,42 @@ namespace AuthorsCustom
 
             foreach (var info in intProperties)
             {
+                var ignoreAttr = info.GetCustomAttributes(typeof(SsfIgnoreAttribute), false);
+                if (ignoreAttr.Length != 0)
+                {
+                    continue;
+                }
                 var value = info.GetValue(item);
-                sb.AppendLine($@"    {info.Name} = {value}");
+
+                var nameAttr = info.GetCustomAttributes(typeof(SsfFieldNameAttribute), false);
+                var propName = info.Name;
+                if (nameAttr.Length != 0)
+                {
+                    var attr = nameAttr[0] as SsfFieldNameAttribute;
+                    propName = attr.PropertyName;
+                }
+
+                sb.AppendLine($@"    {propName} = {value}");
             }
 
             foreach (var info in stringProperties)
             {
+                var attrs = info.GetCustomAttributes(typeof(SsfIgnoreAttribute), false);
+                if (attrs.Length != 0)
+                {
+                    continue;
+                }
+
                 var value = info.GetValue(item);
-                sb.AppendLine($@"    {info.Name} = ""{value}""");
+
+                var nameAttr = info.GetCustomAttributes(typeof(SsfFieldNameAttribute), false);
+                var propName = info.Name;
+                if (nameAttr.Length != 0)
+                {
+                    var attr = nameAttr[0] as SsfFieldNameAttribute;
+                    propName = attr.PropertyName;
+                }
+                sb.AppendLine($@"    {propName} = ""{value}""");
             }
             return sb.ToString();
         }

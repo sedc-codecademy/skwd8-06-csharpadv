@@ -3,5 +3,4 @@ Book:
     Year = 2011
     Nominations = 0
     Wins = 0
-    Title = "The Martian"
-    ImageName = "aw_themarti.jpg"
+    Naslov = "The Martian"

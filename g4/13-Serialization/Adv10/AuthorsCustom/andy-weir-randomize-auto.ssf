@@ -3,5 +3,4 @@ Book:
     Year = 2019
     Nominations = 0
     Wins = 0
-    Title = "Randomize"
-    ImageName = "AW_randomiz.jpg"
+    Naslov = "Randomize"
