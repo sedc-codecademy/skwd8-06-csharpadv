@@ -10,6 +10,11 @@ namespace SEDC.TryBeingFit.Services.Services
     {
         private IDb<T> _db;
 
+        public TrainingService()
+        {
+            _db = new LocalDb<T>();
+        }
+
         public void AddTraining(T training)
         {
             _db.Insert(training);

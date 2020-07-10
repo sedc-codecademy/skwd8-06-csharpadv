@@ -34,8 +34,8 @@ namespace SEDC.TryBeingFit.App
             _videoTrainingService.AddTraining(new VideoTraining() { Title = "30 min workout", Description = "Cool workout for beginners", Difficulty = Difficulty.Medium, Link = "", Rating = 4, Duration = 35 });
             _videoTrainingService.AddTraining(new VideoTraining() { Title = "ABS workout", Description = "Cool ABS workout for beginners", Difficulty = Difficulty.Hard, Link = "", Rating = 5, Duration = 60});
 
-            _liveTrainingService.AddTraining(new LiveTraining() { Title = "ABS workout", Description = "Cool ABS workout for beginners", Difficulty = Difficulty.Easy, Link = "", NextSession = new DateTime(2020, 07, 12), Duration = 60 });
-            _liveTrainingService.AddTraining(new LiveTraining() { Title = "Cardio workout for professionals", Description = "Extra hard cardio workout for professionals", Link = "", Difficulty = Difficulty.Hard, NextSession = new DateTime(2020, 07, 14), Duration = 60 });
+            _liveTrainingService.AddTraining(new LiveTraining() { Title = "ABS workout", Description = "Cool ABS workout for beginners", Difficulty = Difficulty.Easy, Link = "", NextSession = new DateTime(2020, 07, 12), Duration = 60, Trainer = trainer });
+            _liveTrainingService.AddTraining(new LiveTraining() { Title = "Cardio workout for professionals", Description = "Extra hard cardio workout for professionals", Link = "", Difficulty = Difficulty.Hard, NextSession = new DateTime(2020, 07, 14), Duration = 60, Trainer = trainer });
 
         }
 

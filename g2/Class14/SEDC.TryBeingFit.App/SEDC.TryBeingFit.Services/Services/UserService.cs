@@ -11,6 +11,11 @@ namespace SEDC.TryBeingFit.Services.Services
     public class UserService<T> : IUserService<T> where T : User
     {
         private IDb<T> _db;
+
+        public UserService()
+        {
+            _db = new LocalDb<T>();
+        }
         
         public void ChangeInfo(int userId, string firstName, string lastName)
         {
