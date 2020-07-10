@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Adv10.FileSystemDatabase", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthorsCustom", "AuthorsCustom\AuthorsCustom.csproj", "{90F75E4E-0F93-4DEA-BC8F-58EF9FC84308}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthorsJson", "AuthorsJson\AuthorsJson.csproj", "{CAC4AF19-CEEC-4D60-AB09-12BFBAD839E3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{90F75E4E-0F93-4DEA-BC8F-58EF9FC84308}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90F75E4E-0F93-4DEA-BC8F-58EF9FC84308}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90F75E4E-0F93-4DEA-BC8F-58EF9FC84308}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAC4AF19-CEEC-4D60-AB09-12BFBAD839E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAC4AF19-CEEC-4D60-AB09-12BFBAD839E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAC4AF19-CEEC-4D60-AB09-12BFBAD839E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAC4AF19-CEEC-4D60-AB09-12BFBAD839E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
