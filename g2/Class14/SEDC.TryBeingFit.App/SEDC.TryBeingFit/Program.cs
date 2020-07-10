@@ -117,7 +117,7 @@ namespace SEDC.TryBeingFit.App
                             Console.ReadLine();
                         }
                         break;
-                    case "Upgrade to Premium":
+                    case "Upgrade to premium":
                         _uiService.UpgradeToPremium();
                         break;
                     case "Reschedule training":
@@ -187,7 +187,7 @@ namespace SEDC.TryBeingFit.App
                             }
                         }
                         break;
-                    case "Log Out":
+                    case "Log out":
                         _currentUser = null;
                         break;
                     default:
