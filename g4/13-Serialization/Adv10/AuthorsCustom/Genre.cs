@@ -1,6 +1,6 @@
 ﻿namespace AuthorsCustom
 {
-    internal enum Genre
+    public enum Genre
     {
         ScienceFiction,
         Fantasy,

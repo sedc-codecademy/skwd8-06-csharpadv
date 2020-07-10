@@ -1,6 +1,6 @@
 ﻿namespace AuthorsCustom
 {
-    internal enum BookType
+    public enum BookType
     {
         Novel,
         Anthology,
