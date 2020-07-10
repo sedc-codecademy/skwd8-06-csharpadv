@@ -3,3 +3,34 @@ Author:
     Name = "Andy Weir"
     Nominations = 2
     Wins = 0
+    Books =
+        Book:
+            ID = 25361
+            Title = "Artemis:  A Novel"
+            Year = 2017
+            Type = BookType.Novel
+            Nominations = 1
+            ImageName = "AW_artemis.jpg"
+            Wins = 0
+            Genres = 
+                Genre.ScienceFiction
+        Book:
+            ID = 8279
+            Title = "The Martian"
+            Year = 2011
+            Type = BookType.Novel
+            Nominations = 0
+            ImageName = "aw_themarti.jpg"
+            Wins = 0
+            Genres = 
+                Genre.ScienceFiction
+        Book:
+            ID = 36075
+            Title = "Randomize"
+            Year = 2019
+            Type = BookType.ShortStory
+            Nominations = 0
+            ImageName = "AW_randomiz.jpg"
+            Wins = 0
+            Genres = 
+                Genre.ScienceFiction

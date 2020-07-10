@@ -1,11 +1,64 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace AuthorsCustom
 {
     class Program
     {
         static void Main(string[] args)
+        {
+            SaveBooks().Wait();
+        }
+
+        private static async Task SaveBooks()
+        {
+            var artemis = new Book
+            {
+                ID = 25361,
+                Title = "Artemis:  A Novel",
+                Year = 2017,
+                Type = BookType.Novel,
+                Nominations = 1,
+                ImageName = "AW_artemis.jpg",
+                Wins = 0,
+                Genres = new Genre[] { Genre.ScienceFiction }
+            };
+
+            await SedcSerialization.SerializeToFile(artemis, "andy-weir-artemis-auto.ssf");
+
+            var martian = new Book
+            {
+                ID = 8279,
+                Title = "The Martian",
+                Year = 2011,
+                Type = BookType.Novel,
+                Nominations = 0,
+                ImageName = "aw_themarti.jpg",
+                Wins = 0,
+                Genres = new Genre[] { Genre.ScienceFiction }
+            };
+
+            await SedcSerialization.SerializeToFile(martian, "andy-weir-martian-auto.ssf");
+
+
+            var randomize = new Book
+            {
+                ID = 36075,
+                Title = "Randomize",
+                Year = 2019,
+                Type = BookType.ShortStory,
+                Nominations = 0,
+                ImageName = "AW_randomiz.jpg",
+                Wins = 0,
+                Genres = new Genre[] { Genre.ScienceFiction }
+            };
+
+            await SedcSerialization.SerializeToFile(randomize, "andy-weir-randomize-auto.ssf");
+
+        }
+
+        private static async Task SaveAuthors()
         {
             var andyWeir = new Author
             {
@@ -16,7 +69,7 @@ namespace AuthorsCustom
                 Books = new List<Book>()
             };
 
-            SedcSerialization.SerializeToFile(andyWeir, "andy-weir-auto.ssf");
+            await SedcSerialization.SerializeToFile(andyWeir, "andy-weir-auto.ssf");
 
             var swallow = new Author
             {
@@ -27,51 +80,15 @@ namespace AuthorsCustom
                 Books = new List<Book>()
             };
 
-            SedcSerialization.SerializeToFile(swallow, "swallow-auto.ssf");
+            await SedcSerialization.SerializeToFile(swallow, "swallow-auto.ssf");
+        }
 
+        private static async Task LoadAuthor()
+        {
+            var andyWeir = SedcSerialization.DeserializeFromFile("andy-weir-auto.ssf").Result;
 
-            //var artemis = new Book
-            //{
-            //    ID = 25361,
-            //    Title = "Artemis:  A Novel",
-            //    Year = 2017,
-            //    Type = BookType.Novel,
-            //    Nominations = 1,
-            //    ImageName = "AW_artemis.jpg",
-            //    Wins = 0,
-            //    Genres = new Genre[] { Genre.ScienceFiction }
-            //};
-
-            //var martian = new Book
-            //{
-            //    ID = 8279,
-            //    Title = "The Martian",
-            //    Year = 2011,
-            //    Type = BookType.Novel,
-            //    Nominations = 0,
-            //    ImageName = "aw_themarti.jpg",
-            //    Wins = 0,
-            //    Genres = new Genre[] { Genre.ScienceFiction }
-            //};
-
-            //var randomize = new Book
-            //{
-            //    ID = 36075,
-            //    Title = "Randomize",
-            //    Year = 2019,
-            //    Type = BookType.ShortStory,
-            //    Nominations = 0,
-            //    ImageName = "AW_randomiz.jpg",
-            //    Wins = 0,
-            //    Genres = new Genre[] { Genre.ScienceFiction }
-            //};
-
-            //andyWeir.Books.Add(artemis);
-            //andyWeir.Books.Add(martian);
-            //andyWeir.Books.Add(randomize);
-
-
-
+            Console.WriteLine(andyWeir?.Name);
+            Console.WriteLine(andyWeir?.Nominations);
         }
     }
 }
