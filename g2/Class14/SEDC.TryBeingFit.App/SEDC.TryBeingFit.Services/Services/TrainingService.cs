@@ -12,7 +12,8 @@ namespace SEDC.TryBeingFit.Services.Services
 
         public TrainingService()
         {
-            _db = new LocalDb<T>();
+            //_db = new LocalDb<T>();
+            _db = new FileSystemDb<T>();
         }
 
         public void AddTraining(T training)

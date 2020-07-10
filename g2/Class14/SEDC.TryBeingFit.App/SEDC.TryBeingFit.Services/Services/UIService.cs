@@ -23,7 +23,7 @@ namespace SEDC.TryBeingFit.Services.Services
                 for(int i = 0; i < items.Count; i++)
                 {
                     Console.WriteLine($"{ i + 1 }) {items[i]}");
-                }
+                 }
                 int choice = ValidationHelper.ValidateNumber(Console.ReadLine(), items.Count);
                 if(choice == -1)
                 {
