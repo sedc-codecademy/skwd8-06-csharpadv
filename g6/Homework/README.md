@@ -98,3 +98,6 @@ Time is one of the most valuable resources on the planet. When we learn, work, s
 	* The numbers should be validated so the user can only enter numbers which are given as options
 	* Error messages should appear when the user enters incorrect info in red text
 	* When the user successfully register, log in or change their info, they should receive a green success message
+## PART 3
+* **Save Progress** ( HOMEWORK 3 )
+	* The application should save progress even when the application is closed and opened again 
