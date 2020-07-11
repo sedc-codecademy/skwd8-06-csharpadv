@@ -11,6 +11,12 @@ namespace SEDC.Adv.TryBeingFit.Services
 	{
 		public List<string> MainMenuItems { get; set; }
 		public List<string> AccountMenuItems { get; set; }
+		// Generic method that generates dynamically menus
+		// It only needs a list of menu items ( any primitive type will do ) and it will:
+		// 1. Generate the menu
+		// 2. Ask for an input
+		// 3. Validate the input
+		// 4. Return the value of the user choice
 		public int ChooseMenu<T>(List<T> items)
 		{
 			while (true)
@@ -34,9 +40,12 @@ namespace SEDC.Adv.TryBeingFit.Services
 
 			}
 		}
-
+		// This generates a log in or register menu and gets the answer from the user
 		public int LogInMenu()
 		{
+			// We create all the menu options in a list
+			// Then we call a method that generates a menu from a list of items automatically
+			// That method also requests for the user input and validates their input as well
 			List<string> menuItems = new List<string>() { "Log In", "Regsiter" };
 			return ChooseMenu(menuItems);
 
@@ -92,6 +101,9 @@ namespace SEDC.Adv.TryBeingFit.Services
 			Console.WriteLine("Choose what type of training do you want:");
 			return ChooseMenu(trainingMenu);
 		}
+		// This method is a generic method for ANY type of training
+		// That means that it will work for generating a menu for Live or Video trainings
+		// It can even work with new future types of trainings
 		public int TrainMenuItems<T>(List<T> trainings) where T : Training
 		{
 			Console.Clear();
@@ -99,6 +111,10 @@ namespace SEDC.Adv.TryBeingFit.Services
 			return ChooseEntiiesMenu(trainings);
 
 		}
+
+		// This is the same function as ChooseMenu but it works with Complex Types ( objects like VideoTraining, LiveTraining, StandardUser etc... )
+		// ChooseMenu only works with primitive values ( int, string, bool )
+		// We can't use any class. We must use the classes that are connected to our business logic ( All that inherit from BaseEntity )
 		public int ChooseEntiiesMenu<T>(List<T> entities) where T : IBaseEntity
 		{
 			Console.Clear();

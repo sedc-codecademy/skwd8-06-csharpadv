@@ -1,4 +1,5 @@
 ﻿using SEDC.Adv.TryBeingFit.Domain;
+using SEDC.Adv.TryBeingFit.Domain.Db;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -10,7 +11,7 @@ namespace SEDC.Adv.TryBeingFit.Services
         private IDb<T> _db;
         public TrainingService()
         {
-			_db = new LocalDb<T>();
+			_db = new FileSystemDb<T>();
         }
 
         public List<T> GetTrainings()

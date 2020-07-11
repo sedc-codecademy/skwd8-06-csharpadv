@@ -1,4 +1,5 @@
 ﻿using SEDC.Adv.TryBeingFit.Domain;
+using SEDC.Adv.TryBeingFit.Domain.Db;
 using SEDC.Adv.TryBeingFit.Services.Helpers;
 using System;
 using System.Collections.Generic;
@@ -16,7 +17,7 @@ namespace SEDC.Adv.TryBeingFit.Services
 		public UserService()
 		{
 			// We create an instance of the DataBase manipulation class
-			_db = new LocalDb<T>();
+			_db = new FileSystemDb<T>();
 		}
 
 		public T GetUserById(int id)

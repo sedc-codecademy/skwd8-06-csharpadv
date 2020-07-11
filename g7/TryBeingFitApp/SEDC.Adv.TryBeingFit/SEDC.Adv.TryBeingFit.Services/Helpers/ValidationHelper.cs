@@ -6,6 +6,9 @@ namespace SEDC.Adv.TryBeingFit.Services.Helpers
 {
 	public static class ValidationHelper
 	{
+		// This method is a generic and dynamic validate number method
+		// It validates numbers by type and by range
+		// If the number is not the correct type or in the range it returns -1 that represents bad value
 		public static int ValidateNumber(string number, int range)
 		{
 			int num = 0;

@@ -52,6 +52,7 @@ namespace SEDC.Adv.TryBeingFit.App
         }
         static void Main(string[] args)
 		{
+            // Calling the seed method in order to fill in the database with inital data if it is empty
             Seed();
 			while (true)
 			{
@@ -60,6 +61,8 @@ namespace SEDC.Adv.TryBeingFit.App
                 if(_currentUser == null)
 				{
                     // Menu for log in or register
+                    // Program -> Log in Menu method -> Generate a new menu method -> Validate a number
+                    // Validate a number -> Generate a new menu mehod -> Log in Menu method -> Program
                     int loginChoice = _uiSrvc.LogInMenu();
                     // This if checks if the number the user entered is 1. If it is give them log in menu
                     if(loginChoice == 1)
@@ -118,8 +121,13 @@ namespace SEDC.Adv.TryBeingFit.App
                 switch (mainMenuItem)
                 {
                     case "Train":
+                        // We have 2 kinds of training: Video and Live
+                        // But standard users only have access to Video and not Live, while Premium have access to both
+                        // Because this is the case we set the default choice to 1, which corelates to Video Trainings
+                        // IF the user is premium we give them a choice to pick Live or Video and then change the choice accordingly
                         int trainChoice = 1;
                         if (_currentUser.Role == UserRole.Premium) trainChoice = _uiSrvc.TrainMenu();
+                        // Video trainings 
                         if (trainChoice == 1)
                         {
                             int trainingItem = _uiSrvc.TrainMenuItems(_videoTrainings.GetTrainings());
@@ -130,6 +138,7 @@ namespace SEDC.Adv.TryBeingFit.App
                             Console.WriteLine($"Time: {training.Time} minutes");
                             Console.ReadLine();
                         }
+                        // Live trainings
                         if (trainChoice == 2)
                         {
                             int trainingItem = _uiSrvc.TrainMenuItems(_liveTrainings.GetTrainings());
@@ -177,10 +186,10 @@ namespace SEDC.Adv.TryBeingFit.App
                                     _standardUserSrvc.ChangeInfo(_currentUser.Id, firstName, lastName);
                                     break;
                                 case UserRole.Premium:
-                                    _premiumUserSrvc.ChangePassword(_currentUser.Id, firstName, lastName);
+                                    _premiumUserSrvc.ChangeInfo(_currentUser.Id, firstName, lastName);
                                     break;
                                 case UserRole.Trainer:
-                                    _trainerUserSrvc.ChangePassword(_currentUser.Id, firstName, lastName);
+                                    _trainerUserSrvc.ChangeInfo(_currentUser.Id, firstName, lastName);
                                     break;
                             }
                         }
