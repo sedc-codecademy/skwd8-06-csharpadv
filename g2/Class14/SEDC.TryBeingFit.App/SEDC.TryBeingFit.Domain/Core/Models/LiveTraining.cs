@@ -22,7 +22,7 @@ namespace SEDC.TryBeingFit.Domain.Core.Models
 
         public override string Print()
         {
-            throw new NotImplementedException();
+            return $"[{Difficulty}]{Title} - {Description} with {Trainer.Print()}";
         }
     }
 }

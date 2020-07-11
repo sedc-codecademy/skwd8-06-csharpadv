@@ -14,7 +14,8 @@ namespace SEDC.TryBeingFit.Services.Services
 
         public UserService()
         {
-            _db = new LocalDb<T>();
+            //_db = new LocalDb<T>();
+            _db = new FileSystemDb<T>();
         }
         
         public void ChangeInfo(int userId, string firstName, string lastName)
