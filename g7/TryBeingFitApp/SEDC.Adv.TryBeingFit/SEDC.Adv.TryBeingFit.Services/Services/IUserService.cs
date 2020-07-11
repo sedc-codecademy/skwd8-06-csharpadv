@@ -10,5 +10,10 @@ namespace SEDC.Adv.TryBeingFit.Services
 		T LogIn(string username, string password);
 		T Register(T user);
 		T GetUserById(int id);
+
+		// #Added
+		void ChangePassword(int userId, string oldPassword, string newPassword);
+		void ChangeInfo(int userId, string firstName, string lastName);
+		bool IsDbEmpty();
 	}
 }
