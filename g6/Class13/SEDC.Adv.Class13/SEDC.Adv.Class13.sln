@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SEDC.Adv.Class13.SerializeD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEDC.Adv.Class13.FileSystemDatabase", "SEDC.Adv.Class13.FileSystemDatabase\SEDC.Adv.Class13.FileSystemDatabase.csproj", "{B42728D4-DC1C-4069-8EC2-604752AACCC5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEDC.Adv.Class13.SB", "SEDC.Adv.Class13.SB\SEDC.Adv.Class13.SB.csproj", "{E9058707-9D5D-485D-80AF-4A922A24A7FC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B42728D4-DC1C-4069-8EC2-604752AACCC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B42728D4-DC1C-4069-8EC2-604752AACCC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B42728D4-DC1C-4069-8EC2-604752AACCC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9058707-9D5D-485D-80AF-4A922A24A7FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9058707-9D5D-485D-80AF-4A922A24A7FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9058707-9D5D-485D-80AF-4A922A24A7FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9058707-9D5D-485D-80AF-4A922A24A7FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
