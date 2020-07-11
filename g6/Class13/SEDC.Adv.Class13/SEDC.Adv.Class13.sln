@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEDC.Adv.Class13.SerializeDeserialize", "SEDC.Adv.Class13.SerializeDeserialize\SEDC.Adv.Class13.SerializeDeserialize.csproj", "{1C6D3B2D-A12F-483E-BC64-16864F58474E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SEDC.Adv.Class13.SerializeDeserialize", "SEDC.Adv.Class13.SerializeDeserialize\SEDC.Adv.Class13.SerializeDeserialize.csproj", "{1C6D3B2D-A12F-483E-BC64-16864F58474E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEDC.Adv.Class13.FileSystemDatabase", "SEDC.Adv.Class13.FileSystemDatabase\SEDC.Adv.Class13.FileSystemDatabase.csproj", "{B42728D4-DC1C-4069-8EC2-604752AACCC5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{1C6D3B2D-A12F-483E-BC64-16864F58474E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C6D3B2D-A12F-483E-BC64-16864F58474E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C6D3B2D-A12F-483E-BC64-16864F58474E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B42728D4-DC1C-4069-8EC2-604752AACCC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B42728D4-DC1C-4069-8EC2-604752AACCC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B42728D4-DC1C-4069-8EC2-604752AACCC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B42728D4-DC1C-4069-8EC2-604752AACCC5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
