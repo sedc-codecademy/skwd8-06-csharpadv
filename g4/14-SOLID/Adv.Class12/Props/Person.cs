@@ -23,5 +23,13 @@ namespace Props
         public string GetLastName() => __lastName;
         public void SetLastName(string value) => __lastName = value;
 
+
+        private int __age;
+
+        public int GetAge2() => __age;
+        public void SetAge2(int value) => __age = value;
+
+        public int Age3 { get; set; }
+
     }
 }

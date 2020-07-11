@@ -16,8 +16,13 @@ namespace Props
 
         public int Occupied
         {
-            get => __occupied;
+            get
+            {
+                Console.WriteLine("Getter called");
+                return __occupied;
+            }
             set {
+                Console.WriteLine("Setter called");
                 if (value > __capacity)
                 {
                     throw new ArgumentOutOfRangeException("Unable to park more cars than capacity");
@@ -30,6 +35,27 @@ namespace Props
             }
         }
 
-        public int Free { }
+        internal bool AreThereFreeSpaces()
+        {
+            return Free > 0;
+        }
+
+        public int Free 
+        {
+            get 
+            {
+                return __capacity - __occupied;
+            }
+            set
+            {
+                // todo: validation
+                __occupied = __capacity - value;
+            }
+        }
+
+        public bool HasFree
+        {
+            get => Free > 0;
+        }
     }
 }
