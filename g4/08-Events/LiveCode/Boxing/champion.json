@@ -1,0 +1,17 @@
+﻿{
+  "name": "Tyson Fury",
+  "weight": 124,
+  "hitpoints": 1000,
+  "strength" : {
+    "cross": 30,
+    "jab": 20,
+    "uppercut" : 35,
+    "hook" : 30
+  },
+  "agility": {
+    "cross": 15,
+    "jab": 15,
+    "uppercut" : 30,
+    "hook" : 15
+  }
+}

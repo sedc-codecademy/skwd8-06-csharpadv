@@ -1,0 +1,17 @@
+﻿{
+  "name": "Andy Ruiz Jr.",
+  "weight": 128,
+  "hitpoints": 1500,
+  "strength": {
+    "cross": 26,
+    "jab": 16,
+    "uppercut": 21,
+    "hook": 16
+  },
+  "agility": {
+    "cross": 26,
+    "jab": 26,
+    "uppercut": 16,
+    "hook": 21
+  }
+}
