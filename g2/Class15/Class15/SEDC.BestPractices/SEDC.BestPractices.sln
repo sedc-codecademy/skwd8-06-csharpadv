@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEDC.BestPractices", "SEDC.BestPractices\SEDC.BestPractices.csproj", "{B839760B-A0A8-4803-9073-F487D722424A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEDC.CSharpAdvRecap", "SEDC.CSharpAdvRecap\SEDC.CSharpAdvRecap.csproj", "{1A021D9B-323F-4638-BE7C-5D5E24D4BF2C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B839760B-A0A8-4803-9073-F487D722424A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B839760B-A0A8-4803-9073-F487D722424A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B839760B-A0A8-4803-9073-F487D722424A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B839760B-A0A8-4803-9073-F487D722424A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A021D9B-323F-4638-BE7C-5D5E24D4BF2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A021D9B-323F-4638-BE7C-5D5E24D4BF2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A021D9B-323F-4638-BE7C-5D5E24D4BF2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A021D9B-323F-4638-BE7C-5D5E24D4BF2C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D5859848-5DE2-4534-BE39-DC245153A601}
+	EndGlobalSection
+EndGlobal
