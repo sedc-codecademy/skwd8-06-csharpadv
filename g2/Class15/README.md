@@ -14,8 +14,8 @@ In C# as in any other language there are some Good Practices or Invisible Rules 
 - Avoid using fields unless they are private
 - Use **private fields** to hide values and instances that are exclusive to a class and need to be hidden from the outside world
 - Write **boolean names** so that they can be answered with **yes or no** ( IsDeleted, CanLogin, HasCheckedIn )
-- Always add Exception prefix when creating custom Exception classes
-- Always add the I suffix when writing Interfaces
+- Always add Exception suffix when creating custom Exception classes
+- Always add the I prefix when writing Interfaces
 
 ## Methods ☄
 
