@@ -1,9 +1,3 @@
-Author:
-    ID = 2220
-    Nominations = 2
-    Wins = 0
-    Name = "Andy Weir"
-    Books =
     Book:
         ID = 8279
         Year = 2011

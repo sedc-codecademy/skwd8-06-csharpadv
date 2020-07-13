@@ -58,7 +58,39 @@ namespace Interfacing
                 Console.WriteLine(person);
             }
 
-            // persons.Sort()
+            Func<Person, Person, int> byAgeComparison = (Person x, Person y) => {
+                Console.WriteLine("Called comparison");
+                if (x == null) return -1;
+                if (y == null) return 1;
+                return x.Age.CompareTo(y.Age);
+            };
+
+            static int ByAgeComparisonLocal(Person x, Person y)
+            {
+                Console.WriteLine("Called local comparison");
+                if (x == null) return -1;
+                if (y == null) return 1;
+                return x.Age.CompareTo(y.Age);
+            }
+
+            // persons.Sort(new Comparison<Person>(byAgeComparison));
+            // persons.Sort(new Comparison<Person>(ByAgeComparison));
+            persons.Sort(ByAgeComparisonLocal); 
+            // equivalent to persons.Sort(new Comparison<Person>(ByAgeComparisonLocal));
+            
+            // persons.Where(p => p != null).ToList().Sort((f, s) => f.Age.CompareTo(s.Age));
+
+            foreach (var person in persons)
+            {
+                Console.WriteLine(person);
+            }
+        }
+
+        static int ByAgeComparison(Person x, Person y) {
+            Console.WriteLine("Called ByAgeComparison method");
+            if (x == null) return -1;
+            if (y == null) return 1;
+            return x.Age.CompareTo(y.Age);
         }
     }
 }

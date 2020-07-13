@@ -5,6 +5,8 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections;
+using System.Reflection;
 
 namespace AuthorsCustom
 {
@@ -53,52 +55,98 @@ namespace AuthorsCustom
 
         public static string Serialize<T>(T item)
         {
+            // can we use foreach on the property?
+            if (typeof(IEnumerable).IsAssignableFrom(item.GetType()))
+            {
+                return SerializeCollection(item as IEnumerable);
+            }
+            else
+            {
+                return SerializeSimpleObject(item);
+            }
+        }
+
+        private static string SerializeCollection(IEnumerable collection)
+        {
+            var result = new StringBuilder();
+            foreach (var item in collection)
+            {
+                var subItemValues = Serialize(item)
+                    .Split(Environment.NewLine, StringSplitOptions.RemoveEmptyEntries)
+                    .Select(line => $"    {line}");
+                result.AppendJoin(Environment.NewLine, subItemValues);
+                result.AppendLine();
+            }
+            return result.ToString();
+        }
+
+        private static string SerializeSimpleObject<T>(T item)
+        {
             StringBuilder sb = new StringBuilder();
             sb.AppendLine($"{item.GetType().Name}:");
 
-            var intProperties = item.GetType().GetProperties().Where(pi => pi.PropertyType == typeof(int));
-            var stringProperties = item.GetType().GetProperties().Where(pi => pi.PropertyType == typeof(string));
+            var propertyInfos = item.GetType().GetProperties().Where(pi => !IsIgnored(pi));
+
+            var intProperties = propertyInfos.Where(pi => pi.PropertyType == typeof(int));
+            var stringProperties = propertyInfos.Where(pi => pi.PropertyType == typeof(string));
+            var includedProperties = propertyInfos.Where(pi => HasIncludeAttribute(pi));
 
             foreach (var info in intProperties)
             {
-                var ignoreAttr = info.GetCustomAttributes(typeof(SsfIgnoreAttribute), false);
-                if (ignoreAttr.Length != 0)
-                {
-                    continue;
-                }
                 var value = info.GetValue(item);
-
-                var nameAttr = info.GetCustomAttributes(typeof(SsfFieldNameAttribute), false);
-                var propName = info.Name;
-                if (nameAttr.Length != 0)
-                {
-                    var attr = nameAttr[0] as SsfFieldNameAttribute;
-                    propName = attr.PropertyName;
-                }
-
+                string propName = GetPropertyName(info);
                 sb.AppendLine($@"    {propName} = {value}");
             }
 
             foreach (var info in stringProperties)
             {
-                var attrs = info.GetCustomAttributes(typeof(SsfIgnoreAttribute), false);
-                if (attrs.Length != 0)
-                {
-                    continue;
-                }
-
                 var value = info.GetValue(item);
-
-                var nameAttr = info.GetCustomAttributes(typeof(SsfFieldNameAttribute), false);
-                var propName = info.Name;
-                if (nameAttr.Length != 0)
-                {
-                    var attr = nameAttr[0] as SsfFieldNameAttribute;
-                    propName = attr.PropertyName;
-                }
+                var propName = GetPropertyName(info);
                 sb.AppendLine($@"    {propName} = ""{value}""");
             }
+
+            foreach (var info in includedProperties)
+            {
+                var propName = GetPropertyName(info);
+                sb.AppendLine($@"    {propName} =");
+                var value = info.GetValue(item);
+                sb.Append(Serialize(value));
+            }
             return sb.ToString();
+        }
+
+        private static string GetPropertyName(PropertyInfo info)
+        {
+            var nameAttr = info.GetCustomAttributes(typeof(SsfFieldNameAttribute), false);
+            var propName = info.Name;
+            if (nameAttr.Length != 0)
+            {
+                var attr = nameAttr[0] as SsfFieldNameAttribute;
+                propName = attr.PropertyName;
+            }
+
+            return propName;
+        }
+
+        private static bool HasIncludeAttribute(PropertyInfo propertyInfo)
+        {
+            if (propertyInfo.PropertyType == typeof(string))
+            {
+                return false;
+            }
+            if (propertyInfo.PropertyType == typeof(int))
+            {
+                return false;
+            }
+
+            var includeAttr = propertyInfo.GetCustomAttributes(typeof(SsfIncludeAttribute), false);
+            return includeAttr.Length != 0;
+        }
+
+        private static bool IsIgnored(PropertyInfo propertyInfo)
+        {
+            var attrs = propertyInfo.GetCustomAttributes(typeof(SsfIgnoreAttribute), false);
+            return attrs.Length != 0;
         }
 
         public static Task SerializeToFile<T>(T item, string filename)
@@ -106,9 +154,6 @@ namespace AuthorsCustom
             var content = Serialize(item);
             return File.WriteAllTextAsync(filename, content);
         }
-
-
-
 
         internal static Author Deserialize(string content)
         {

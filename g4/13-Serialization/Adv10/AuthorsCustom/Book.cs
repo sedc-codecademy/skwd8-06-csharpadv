@@ -2,17 +2,22 @@
 {
     public class Book
     {
-        public int ID { get; internal set; }
+        public int ID { get; set; }
 
         [SsfFieldName("Naslov")]
-        public string Title { get; internal set; }
-        public int Year { get; internal set; }
-        public int Nominations { get; internal set; }
-        public int Wins { get; internal set; }
+        public string Title { get; set; }
+        public int Year { get; set; }
+        public int Nominations { get; set; }
+        public int Wins { get; set; }
 
         [SsfIgnore]
-        public string ImageName { get; internal set; }
-        public BookType Type { get; internal set; }
-        public Genre[] Genres { get; internal set; }
+        public string ImageName { get; set; }
+        public BookType Type { get; set; }
+        public Genre[] Genres { get; set; }
+
+        public override string ToString()
+        {
+            return $"#{ID}: {Title}";
+        }
     }
 }

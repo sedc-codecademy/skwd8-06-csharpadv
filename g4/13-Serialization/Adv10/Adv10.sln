@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Adv10.SerializeDeserialize"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Adv10.FileSystemDatabase", "Adv10.FileSystemDatabase\Adv10.FileSystemDatabase.csproj", "{7DA80E43-A416-4F2D-9DEE-06090E96EA9A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthorsCustom", "AuthorsCustom\AuthorsCustom.csproj", "{90F75E4E-0F93-4DEA-BC8F-58EF9FC84308}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthorsCustom", "AuthorsCustom\AuthorsCustom.csproj", "{90F75E4E-0F93-4DEA-BC8F-58EF9FC84308}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthorsJson", "AuthorsJson\AuthorsJson.csproj", "{CAC4AF19-CEEC-4D60-AB09-12BFBAD839E3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthorsJson", "AuthorsJson\AuthorsJson.csproj", "{CAC4AF19-CEEC-4D60-AB09-12BFBAD839E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthorsCustomTests", "AuthorsCustomTests\AuthorsCustomTests.csproj", "{83E1A811-58AB-4FDF-9B94-59A76E8A94E3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{CAC4AF19-CEEC-4D60-AB09-12BFBAD839E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CAC4AF19-CEEC-4D60-AB09-12BFBAD839E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CAC4AF19-CEEC-4D60-AB09-12BFBAD839E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83E1A811-58AB-4FDF-9B94-59A76E8A94E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83E1A811-58AB-4FDF-9B94-59A76E8A94E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83E1A811-58AB-4FDF-9B94-59A76E8A94E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83E1A811-58AB-4FDF-9B94-59A76E8A94E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

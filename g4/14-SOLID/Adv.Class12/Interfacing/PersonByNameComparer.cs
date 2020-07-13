@@ -22,4 +22,28 @@ namespace Interfacing
             return x.Age.CompareTo(y.Age);
         }
     }
+
+    class PersonByFirstNameComparer : IComparer<Person>
+    {
+        public int Compare([AllowNull] Person x, [AllowNull] Person y)
+        {
+            Console.WriteLine("Called comparer compare");
+            if (x == null) return -1;
+            if (y == null) return 1;
+
+            return x.FirstName.CompareTo(y.FirstName);
+        }
+    }
+
+    class PersonByLastNameComparer : IComparer<Person>
+    {
+        public int Compare([AllowNull] Person x, [AllowNull] Person y)
+        {
+            Console.WriteLine("Called comparer compare");
+            if (x == null) return -1;
+            if (y == null) return 1;
+
+            return x.LastName.CompareTo(y.LastName);
+        }
+    }
 }
