@@ -21,15 +21,18 @@ namespace SEDC.Exercise.TryBeingFitApp
 
         public static void Seed()
         {
-            _standardUserSrvc.Register(new StandardUser() { FirstName = "Bob", LastName = "Bobsky", Username = "bobob1", Password = "bobbest1" });
-            _premiumUserSrvc.Register(new PremiumUser() { FirstName = "Jill", LastName = "Wayne", Username = "jillw", Password = "jillsuper26" });
-            TrainerUser John = new TrainerUser() { FirstName = "John", LastName = "Johnsky", Username = "johnjj", Password = "johny55" };
-            _trainerUserSrvc.Register(John);
-            _videoTrainings.AddTraining(new VideoTraining() { Title = "30 min workout", Description = "Cool workout for begginers and inermediate users", Difficulty = Difficulty.Medium, Link = "https://www.youtube.com/watch?v=50kH47ZztHs", Rating = 4, Time = 35 });
-            _videoTrainings.AddTraining(new VideoTraining() { Title = "Standing Abs workout", Description = "Abs workout for people at home with no equipment", Difficulty = Difficulty.Easy, Link = "https://www.youtube.com/watch?v=Qia2ZXEzyLw", Rating = 5, Time = 11 });
-            _videoTrainings.AddTraining(new VideoTraining() { Title = "Full AGILITY Bodyweight", Description = "An intese workout for people that have experience working out and need a good AGILITY training", Difficulty = Difficulty.Hard, Link = "https://www.youtube.com/watch?v=tveIjnSG_8s", Rating = 2, Time = 67 });
-            _liveTrainings.AddTraining(new LiveTraining() { Title = "Workout with John", Description = "Working out can be easy when you are at home. Trust Jonh, he a professional trainer", Difficulty = Difficulty.Medium, NextSession = new DateTime(2020, 07, 20), Trainer = John, Time = 40, Rating = 2 });
-            _liveTrainings.AddTraining(new LiveTraining() { Title = "Quickabs  with John", Description = "You want abs for the summer? This is the training for you!!", Difficulty = Difficulty.Hard, NextSession = new DateTime(2020, 07, 24), Trainer = John, Time = 25, Rating = 4 });
+            if (_standardUserSrvc.IsDbEmpty() && _premiumUserSrvc.IsDbEmpty() && _trainerUserSrvc.IsDbEmpty())
+            {
+                _standardUserSrvc.Register(new StandardUser() { FirstName = "Bob", LastName = "Bobsky", Username = "bobob1", Password = "bobbest1" });
+                _premiumUserSrvc.Register(new PremiumUser() { FirstName = "Jill", LastName = "Wayne", Username = "jillw", Password = "jillsuper26" });
+                TrainerUser John = new TrainerUser() { FirstName = "John", LastName = "Johnsky", Username = "johnjj", Password = "johny55" };
+                _trainerUserSrvc.Register(John);
+                _videoTrainings.AddTraining(new VideoTraining() { Title = "30 min workout", Description = "Cool workout for begginers and inermediate users", Difficulty = Difficulty.Medium, Link = "https://www.youtube.com/watch?v=50kH47ZztHs", Rating = 4, Time = 35 });
+                _videoTrainings.AddTraining(new VideoTraining() { Title = "Standing Abs workout", Description = "Abs workout for people at home with no equipment", Difficulty = Difficulty.Easy, Link = "https://www.youtube.com/watch?v=Qia2ZXEzyLw", Rating = 5, Time = 11 });
+                _videoTrainings.AddTraining(new VideoTraining() { Title = "Full AGILITY Bodyweight", Description = "An intese workout for people that have experience working out and need a good AGILITY training", Difficulty = Difficulty.Hard, Link = "https://www.youtube.com/watch?v=tveIjnSG_8s", Rating = 2, Time = 67 });
+                _liveTrainings.AddTraining(new LiveTraining() { Title = "Workout with John", Description = "Working out can be easy when you are at home. Trust Jonh, he a professional trainer", Difficulty = Difficulty.Medium, NextSession = new DateTime(2020, 07, 20), Trainer = John, Time = 40, Rating = 2 });
+                _liveTrainings.AddTraining(new LiveTraining() { Title = "Quickabs  with John", Description = "You want abs for the summer? This is the training for you!!", Difficulty = Difficulty.Hard, NextSession = new DateTime(2020, 07, 24), Trainer = John, Time = 25, Rating = 4 });
+            }
         }
         static void Main(string[] args)
         {
@@ -37,6 +40,7 @@ namespace SEDC.Exercise.TryBeingFitApp
 
             while (true)
             {
+                
                 if (_currentUser == null)
                 {
                     int loginChoice = _uiService.LogInMenu();
@@ -180,8 +184,6 @@ namespace SEDC.Exercise.TryBeingFitApp
                                     break;
                             }
                         }
-
-                        Console.Clear();
                         break;
 
                     case "Log Out":

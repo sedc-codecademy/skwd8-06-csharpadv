@@ -1,0 +1,39 @@
+[
+  
+  {
+    "NextSession": "2020-07-20T00:00:00",
+    "Trainer": {
+      "YearsExperience": 0,
+      "FirstName": "John",
+      "LastName": "Johnsky",
+      "Username": "johnjj",
+      "Password": "johny55",
+      "Role": 3,
+      "Id": 2
+    },
+    "Title": "Workout with John",
+    "Description": "Working out can be easy when you are at home. Trust Jonh, he a professional trainer",
+    "Time": 40,
+    "Difficulty": 1,
+    "Rating": 2,
+    "Id": 6
+  },
+  {
+    "NextSession": "2020-07-24T00:00:00",
+    "Trainer": {
+      "YearsExperience": 0,
+      "FirstName": "John",
+      "LastName": "Johnsky",
+      "Username": "johnjj",
+      "Password": "johny55",
+      "Role": 3,
+      "Id": 2
+    },
+    "Title": "Quickabs  with John",
+    "Description": "You want abs for the summer? This is the training for you!!",
+    "Time": 25,
+    "Difficulty": 2,
+    "Rating": 4,
+    "Id": 7
+  }
+]

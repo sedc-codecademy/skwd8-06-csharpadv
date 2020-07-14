@@ -1,0 +1,21 @@
+[
+  
+  {
+    "VideoTrainings": null,
+    "FirstName": "Bob",
+    "LastName": "Bobsky",
+    "Username": "bobob1",
+    "Password": "andrejtest",
+    "Role": 1,
+    "Id": 1
+  },
+  {
+    "VideoTrainings": null,
+    "FirstName": "Andrej",
+    "LastName": "Chichakovski",
+    "Username": "andrejtest",
+    "Password": "andrej100",
+    "Role": 1,
+    "Id": 8
+  }
+]

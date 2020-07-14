@@ -1,5 +1,6 @@
 ﻿using SEDC.Exercise.TryBeingFit.Domain.Core.Db;
 using SEDC.Exercise.TryBeingFit.Domain.Core.Entities;
+using SEDC.Exercise.TryBeingFit.Domain.Core.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -8,11 +9,11 @@ namespace SEDC.Exercise.TryBeingFit.Services.Services
 {
     public class TrainingService<T> where T : Training
     {
-        private LocalDb<T> _db;
+        private IDb<T> _db;
 
         public TrainingService()
         {
-            _db = new LocalDb<T>();
+            _db = new FileSystemDb<T>();
         }
 
         public List<T> GetTrainings()

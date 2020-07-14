@@ -1,4 +1,5 @@
 ﻿using SEDC.Exercise.TryBeingFit.Domain.Core.Entities;
+using SEDC.Exercise.TryBeingFit.Domain.Core.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +7,7 @@ using System.Text;
 
 namespace SEDC.Exercise.TryBeingFit.Domain.Core.Db
 {
-    public class LocalDb<T> where T : BaseEntity
+    public class LocalDb<T> : IDb<T> where T : BaseEntity
     {
         public int IdCount { get; set; }
         private List<T> db;

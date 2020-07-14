@@ -1,5 +1,6 @@
 ﻿using SEDC.Exercise.TryBeingFit.Domain;
 using SEDC.Exercise.TryBeingFit.Domain.Core.Db;
+using SEDC.Exercise.TryBeingFit.Domain.Core.Interfaces;
 using SEDC.Exercise.TryBeingFit.Services.Helpers;
 using System;
 using System.Collections.Generic;
@@ -10,10 +11,10 @@ namespace SEDC.Exercise.TryBeingFit.Services.Services
 {
     public class UserService<T> where T : User
     {
-        private LocalDb<T> _db;
+        private IDb<T> _db;
         public UserService()
         {
-            _db = new LocalDb<T>();
+            _db = new FileSystemDb<T>();
         }
 
         public T GetById(int id)
@@ -25,13 +26,18 @@ namespace SEDC.Exercise.TryBeingFit.Services.Services
             T user = _db.GetAll().SingleOrDefault(x => x.Username == username && x.Password == password);
             if (user == null)
             {
-                //("[Error] Username or password did not match..", Color)
+                MessageHelper.Color("[Error] Username or password did not match!", ConsoleColor.Red);
                 Console.ReadLine();
                 return null;
             }
 
             return user;
 
+        }
+
+        public bool IsDbEmpty()
+        {
+            return _db.GetAll() == null;
         }
 
         public T Register(T user)
