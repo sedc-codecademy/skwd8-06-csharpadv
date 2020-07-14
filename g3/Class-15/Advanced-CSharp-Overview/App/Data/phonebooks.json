@@ -1,0 +1,97 @@
+﻿[
+  {
+    "Id": "51ab2140-4413-4e3c-a522-5dcff6306cfb",
+    "Language": "English",
+    "Year": 2018,
+    "Contacts": [
+      {
+        "Id": "85738e72-cba2-4035-9742-935bbbb45888",
+        "FirstName": "Trajan",
+        "LastName": "Stevkovski",
+        "PhoneNumber": "123456789",
+        "MobileNumber": "987654321",
+        "Fax": "456789"
+      },
+      {
+        "Id": "ea117c3b-bb24-4f73-a0c2-e2d4b491ee6e",
+        "FirstName": "Dejan",
+        "LastName": "Blazheski",
+        "PhoneNumber": "223456789",
+        "MobileNumber": "887654321",
+        "Fax": "556789"
+      },
+      {
+        "Id": "0750fc6f-ffd9-44f3-8866-34b7fd33a3bd",
+        "FirstName": "Tose",
+        "LastName": "Todorovski",
+        "PhoneNumber": "323456789",
+        "MobileNumber": "787654321",
+        "Fax": "656789"
+      }
+    ]
+  },
+
+  {
+    "Id": "6a5e9978-8de3-4456-bf79-40003dc987a7",
+    "Language": "English",
+    "Year": 2019,
+    "Contacts": [
+      {
+        "Id": "02c2e45e-242a-4e6e-9c3d-c8eae436e9c8",
+        "FirstName": "Trajann",
+        "LastName": "Stevkovski",
+        "PhoneNumber": "123456789",
+        "MobileNumber": "987654321",
+        "Fax": "456789"
+      },
+      {
+        "Id": "853043ff-e41b-4f25-accb-caff11b95477",
+        "FirstName": "Dejan",
+        "LastName": "Blazheski",
+        "PhoneNumber": "223456789",
+        "MobileNumber": "887654321",
+        "Fax": "556789"
+      },
+      {
+        "Id": "d1bc9619-39ff-4355-859f-a528bf8a86a1",
+        "FirstName": "Tose",
+        "LastName": "Todorovski",
+        "PhoneNumber": "323456789",
+        "MobileNumber": "787654321",
+        "Fax": "656789"
+      }
+    ]
+  },
+
+  {
+    "Id": "82421948-7dd2-4747-add3-5d1f1088347f",
+    "Language": "English",
+    "Year": 2020,
+    "Contacts": [
+      {
+        "Id": "7fb8a8f0-6ab9-4847-a612-b2fb6ccc3987",
+        "FirstName": "Trajannnn",
+        "LastName": "Stevkovski",
+        "PhoneNumber": "123456789",
+        "MobileNumber": "987654321",
+        "Fax": "456789"
+      },
+      {
+        "Id": "1102a358-d392-4d1a-8c56-e95c4c836782",
+        "FirstName": "Dejan",
+        "LastName": "Blazheski",
+        "PhoneNumber": "223456789",
+        "MobileNumber": "887654321",
+        "Fax": "556789"
+      },
+      {
+        "Id": "58530c69-29d7-4037-8f4d-445544919b30",
+        "FirstName": "Tose",
+        "LastName": "Todorovski",
+        "PhoneNumber": "323456789",
+        "MobileNumber": "787654321",
+        "Fax": "656789"
+      }
+    ]
+  }
+]

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Domain
 {
-    public class Contact
+    public class Contact : IBaseEntity
     {
         public Guid Id{ get; set; }
         public string FirstName{ get; set; }
