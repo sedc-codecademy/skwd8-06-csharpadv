@@ -75,5 +75,9 @@ namespace SEDC.Adv.TryBeingFit.Services.Services
 			int userId = _db.Insert(user);
 			return _db.GetById(userId);
 		}
+		public T GetById(int id)
+		{
+			return _db.GetById(id);
+		}
 	}
 }

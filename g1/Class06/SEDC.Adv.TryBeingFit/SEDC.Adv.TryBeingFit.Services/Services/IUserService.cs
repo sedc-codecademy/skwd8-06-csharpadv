@@ -11,5 +11,7 @@ namespace SEDC.Adv.TryBeingFit.Services.Services
         void ChangeInfo(int userId, string firstName, string lastName);
         T LogIn(string username, string password);
         T Register(T user);
+
+        T GetById(int id);
     }
 }
